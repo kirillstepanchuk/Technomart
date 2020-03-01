@@ -11,7 +11,8 @@
         <div>
             <div>
                 <div>
-                    <a href="#"><img src="img/technomart.png" alt="Tehnomart"></a>
+                    <a href="#" aria-label="На главную"><img src="img/technomart.png" alt="Tehnomart"></a>
+                    <img src="http://placehold.it/20x20" alt="search">
                     <input type="text" placeholder="Поиск">
                 </div>  
                 <div>
@@ -27,13 +28,15 @@
                     и инструментов для ремонта
                 </h1>
                 <div>
-                    <a href="tel:+7 (812) 555-05-55">+7 (812) 555-05-55</a>
+                    <a href="tel:+7 (812) 555-05-55" aria-label="Номер телефона">+7 (812) 555-05-55</a>
                     <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                 </div>
                 <div>
                     <div>
-                        <a href="#"><img src="http://placehold.it/20x20" alt="icon"> Равшан Джамшутович</a>
-                        <a href="#"><img src="http://placehold.it/20x20" alt="exit"></a>
+                        <a href="#" aria-label="Аккaунт пользователя">
+                            <img src="http://placehold.it/20x20" alt="icon"> Равшан Джамшутович</a>
+                        <a href="#" aria-label="Выход из аккаунта">
+                            <img src="http://placehold.it/20x20" alt="exit"></a>
                     </div>
                     <ul>
                          <li><a href="#">Мои заказы</a></li>
@@ -69,30 +72,35 @@
                <div>
                     <div>
                         <h3>Материал</h3>
-                        <a href="#">НА ЛЮБОЙ ВКУС</a>
+                        <a href="#" aria-label="Материал">НА ЛЮБОЙ ВКУС</a>
                     </div>
                     <div>
                         <h3>Инструмент</h3>
-                        <a href="#">НА ВСЕ СЛУЧАИ ЖИЗНИ</a>
+                        <a href="#" aria-label="Инструмент">НА ВСЕ СЛУЧАИ ЖИЗНИ</a>
                     </div>
                     <div>
                         <h3>Техника</h3>
-                        <a href="#">ДЛЯ СТРОЙКИ</a>
+                        <a href="#" aria-label="Техника">ДЛЯ СТРОЙКИ</a>
                     </div>
                 </div>
                 <div>
                     <div>
                         <h2>ДРЕЛИ</h2>
                         <p>Соседям на радость!</p>
-                        <a href="#">ОТКРЫТЬ КАТАЛОГ</a>
+                        <a href="#" aria-label="Дрели">ОТКРЫТЬ КАТАЛОГ</a>
+                    </div>
+                    <div>
+                        <h2>ПЕРФОРАТОРЫ</h2>
+                        <p>Настоящие мужские игрушки</p>
+                        <a href="#" aria-label="Дрели">ОТКРЫТЬ КАТАЛОГ</a>
                     </div>
                     <div>
                         <h3>Скидки 50%</h3>
-                        <a href="#">НА 350 ТОВАРОВ</a>
+                        <a href="#" aria-label="Скидки">НА 350 ТОВАРОВ</a>
                     </div>
                     <div>
                         <h3>Доставка</h3>
-                        <a href="#">БЕСПЛАТНО</a>
+                        <a href="#" aria-label="Доставка">БЕСПЛАТНО</a>
                     </div>
                 </div>
            </div>
@@ -110,7 +118,7 @@
                         <a href="#">В ЗАКЛАДКИ</a>
                         <img src="img/hummer-drill-3.png" alt="Hummer drill 3" width="184" height="163">
                         <h3>Перфоратор BOSCH BFG 9000</h3>
-                        <P><del>22500 P.</del></P>
+                        <p><del>22500 P.</del></p>
                         <a href="#">15500 P.</a>
                     </div>
                     <div>
@@ -118,7 +126,7 @@
                         <a href="#">В ЗАКЛАДКИ</a>
                         <img src="img/hummer-drill.png" alt="Hummer drill 1" width="126" height="112">
                         <h3>Перфоратор BOSCH BFG 3000</h3>
-                        <P><del>32500 P.</del></P>
+                        <p><del>32500 P.</del></p>
                         <a href="#">25500 P.</a>
                     </div>
                     <div>
@@ -126,7 +134,7 @@
                         <a href="#">В ЗАКЛАДКИ</a>
                         <img src="img/hummer-drill-2.png" alt="Hummer drill 2" width="144" height="128">
                         <h3>Перфоратор BOSCH BFG 6000</h3>
-                        <P><del>30500 P.</del></P>
+                        <p><del>30500 P.</del></p>
                         <a href="#">25500 P.</a>
                     </div>
                     <div>
@@ -170,9 +178,9 @@
                 <div>
                     <div>
                         <ul>
-                            <li><a href="#">Доставка</a> </li>
-                            <li><a href="#">Гарантия</a></li>
-                            <li><a href="#">Кредит</a></li>
+                            <li><button type="button">Доставка</button> </li>
+                            <li><button type="button">Гарантия</button></li>
+                            <li><button type="button">Кредит</button></li>
                         </ul>
                     </div>
                     <div>
@@ -181,6 +189,17 @@
                         к вашему подъезду совершенно бесплатно!
                         Ведь мы неплохо заработаем, 
                         поднимая его на ваш этаж!</p>
+                    </div>
+                    <div>
+                        <h2>ГАРАНТИЯ</h2>
+                        <p>Если купленный у нас товар поломается или заискрит, 
+                        а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. 
+                        Дом уж восстановите как-нибудь сами.</p>
+                    </div>
+                    <div>
+                        <h2>КРЕДИТ</h2>
+                        <p>Залезть в долговую яму стало проще! 
+                        Кредитные консультанты придут вам на помощь.</p>
                     </div>
                 </div>
             </div>
@@ -205,7 +224,26 @@
                     <p>Вы можете забрать товар сами, 
                     заехав в наш офис:</p>
                     <img src="img/map.png" alt="map" width="300" height="158">  
-                    <a href="#">ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</a>
+                    <img src="img/big-map.png" alt="big map" width="970" height="476">
+                    <button>ЗАБЛУДИЛИСЬ? НАПИШИТЕ НАМ!</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div>
+                <button type="button" aria-label="Закрыть окно">close</button>
+                <div>
+                    <div>
+                        <label for="filter-name">Ваше имя:</label>
+                        <input type="text" name="name" id="filter-name">
+                    </div>
+                    <div>
+                        <label for="filter-e-mail">Ваш e-mail:</label>
+                        <input type="text" name="e-mail" id="filter-e-mail">
+                    </div>
+                    <label for="filter-message">Текст письма:</label>
+                    <input type="text" name="message" id="filter-message">
+                    <button type="submit">ОТПРАВИТЬ</button>
                 </div>
             </div>
         </section>
@@ -216,7 +254,7 @@
 
     <footer>
         <div>
-            <a href="#"><img src="img/technomart.png" alt="Tehnomart"></a>
+            <a href="#" aria-label="На главную"><img src="img/technomart.png" alt="Tehnomart"></a>
             <div>
                 <nav>
                     <ul>
@@ -232,7 +270,7 @@
         <div>
             <div>
                 <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-                <a href="tel:+7 (812) 555-05-55">+7 (812) 555-05-55</a>
+                <a href="tel:+7 (812) 555-05-55" aria-label="Номер телефона">+7 (812) 555-05-55</a>
                 <div>
                     <nav>
                         <ul>
