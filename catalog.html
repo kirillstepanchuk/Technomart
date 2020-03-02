@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalog</title>
+    <title>Каталог</title>
 </head>
 <body>
 
@@ -11,13 +11,15 @@
         <div>
             <div>
                 <div>
-                    <a href="#" aria-label="На главную"><img src="img/technomart.png" alt="Tehnomart"></a>
-                    <img src="http://placehold.it/20x20" alt="search">
-                    <input type="text" placeholder="Поиск">
+                    <a href="#" aria-label="На главную"><img src="img/technomart.png" alt="Техномарт"></a>
+                    <img src="http://placehold.it/20x20" alt="Поиск">
+                    <form action="">
+                        <input type="text" placeholder="Поиск">
+                    </form>
                 </div>  
                 <div>
-                    <a href="#">Закладки:0</a>
-                    <a href="#">Корзина:10</a>
+                    <a href="#">Закладки:<span>0</span></a>
+                    <a href="#">Корзина:<span>10</span>></a>
                     <a href="#">Оформить заказ</a>
                 </div>
              </div>  
@@ -34,9 +36,10 @@
                 <div>
                     <div>
                         <a href="#" aria-label="Аккaунт пользователя">
-                            <img src="http://placehold.it/20x20" alt="icon"> Равшан Джамшутович</a>
+                            <img src="http://placehold.it/20x20" alt="Пользователь"> Равшан Джамшутович</a>
                         <a href="#" aria-label="Выход из аккаунта">
-                            <img src="http://placehold.it/20x20" alt="exit"></a>
+                            <span>Выход из аккаунта</span>
+                            <img src="http://placehold.it/20x20" alt="Выход"></a>
                     </div>
                     <ul>
                         <li><a href="#">Мои заказы</a></li>
@@ -44,7 +47,12 @@
                     </ul>
                 </div>
                 <div>
-                    <a href="#"><div><img src="http://placehold.it/20x20" alt="log-in"><p>Войти</p></div></a>
+                    <a href="#">
+                        <div>
+                            <img src="http://placehold.it/20x20" alt="Войти">
+                            <p>Войти</p>
+                        </div>
+                    </a>
                     <a href="#">Регистрация</a>
                </div>
                  
@@ -72,149 +80,153 @@
                 <div> 
                     <ul>
                         <li>
-                            <a href="#">ГЛАВНАЯ</a>
+                            <a href="#">главная</a>
                         </li>
                         <li>
-                            <a href="#">КАТАЛОГ</a>
+                            <a href="#">каталог</a>
                         </li>
                         <li>
-                            <a href="#">ИНСТРУМЕНТ</a>
+                            <a href="#">инструмент</a>
                         </li>
                         <li>
-                            ПЕРФОРАТОРЫ
+                            перфораторы
                         </li>
                     </ul>
                 </div>
-                <div><h2>ПЕРФОРАТОРЫ</h2></div>
+                <div><h2>перфораторы</h2></div>
                 <div>
                     <div>
-                        <h2>ФИЛЬТР:</h2>
+                        <form action="">
+                        <div>
+                            <h2>фильтр:</h2>
+                        </div>
+                        <div>
+                            <div>
+                                <fieldset>
+                                <legend>цена:</legend>
+                                <div>
+                                    <input type="range">
+                                </div>
+                                <div>
+                                    <input type="text">
+                                    -
+                                    <input type="text">
+                                </div>
+                                </fieldset>
+                            </div>
+                            <div>
+                                <fieldset>
+                                <legend>производители:</legend>
+                                <ul>
+                                    <li><input type="checkbox" name="bosch" id="filter-bosch">
+                                        <label for="filter-bosch">bosch</label></li>
+                                    <li><input type="checkbox" name="interskol" id="filter-interskol">
+                                        <label for="filter-interskol">интерскол</label></li>
+                                    <li><input type="checkbox" name="makita" id="filter-makita">
+                                        <label for="filter-makita">makita</label></li>
+                                    <li><input type="checkbox" name="dewalt" id="filter-dewalt">
+                                        <label for="filter-dewalt">dewalt</label></li>
+                                    <li><input type="checkbox" name="hitachi" id="filter-hitachi">
+                                        <label for="filter-hitachi">hitachi</label></li>
+                                </ul>
+                                </fieldset>
+                            </div>
+                            <div>
+                                <fieldset>
+                                <legend>питание:</legend>
+                                <ul>
+                                    <li><input type="radio" name="charge" id="filter-battery"> 
+                                        <label for="filter-battery">аккомуляторные</label></li>
+                                    <li><input type="radio" name="charge" id="filter-network">
+                                        <label for="filter-network">сетевые</label></li>
+                                </ul>
+                                </fieldset>
+                            </div>
+                            <button type="submit">показать</button>
+                        </form>
+                        </div>
                     </div>
                     <div>
-                        <h2>СОРТИРОВКА:</h2>
+                        <div>
+                        <h2>сортировка:</h2>
                         <ul>
-                            <li><a href="#">ПО ЦЕНЕ</a></li>
-                            <li><a href="#">ПО ТИПУ</a></li>
-                            <li><a href="#">ПО ФУНКЦИОНАЛУ</a></li>
-                            <li><a href="#">up</a></li>
-                            <li><a href="#">down</a></li>
+                            <li><a href="#">по цене</a></li>
+                            <li><a href="#">по типу</a></li>
+                            <li><a href="#">по функционалу</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">вверх</a></li>
+                            <li><a href="#">вниз</a></li>
                         </ul>
                     </div>
-                </div>
-                <div>
-                    <div>
-                        <div>
-                            <fieldset>
-                            <legend>ЦЕНА:</legend>
-                            <div>
-                                <input type="range">
-                            </div>
-                            <div>
-                                <input type="text">
-                                -
-                                <input type="text">
-                            </div>
-                            </fieldset>
-                        </div>
-                        <div>
-                            <fieldset>
-                            <legend>ПРОИЗВОДИТЕЛИ:</legend>
-                            <ul>
-                                <li><input type="checkbox" name="bosch" id="filter-bosch">
-                                    <label for="filter-bosch">BOSCH</label></li>
-                                <li><input type="checkbox" name="interskol" id="filter-interskol">
-                                    <label for="filter-interskol">ИНТЕРСКОЛ</label></li>
-                                <li><input type="checkbox" name="makita" id="filter-makita">
-                                    <label for="filter-makita">MAKITA</label></li>
-                                <li><input type="checkbox" name="dewalt" id="filter-dewalt">
-                                    <label for="filter-dewalt">DEWALT</label></li>
-                                <li><input type="checkbox" name="hitachi" id="filter-hitachi">
-                                    <label for="filter-hitachi">HITACHI</label></li>
-                            </ul>
-                            </fieldset>
-                        </div>
-                        <div>
-                            <fieldset>
-                            <legend>ПИТАНИЕ:</legend>
-                            <ul>
-                                <li><input type="radio" name="charge" id="filter-battery"> 
-                                    <label for="filter-battery">АККОМУЛЯТОРНЫЕ</label></li>
-                                <li><input type="radio" name="charge" id="filter-network">
-                                    <label for="filter-network">СЕТЕВЫЕ</label></li>
-                            </ul>
-                            </fieldset>
-                        </div>
-                        <button type="submit">ПОКАЗАТЬ</button>
-                    </div>
-                    <div>
                         <div>
                             <div>
-                                <a href="#">КУПИТЬ</a>
-                                <a href="#">В ЗАКЛАДКИ</a>
-                                <img src="img/hummer-drill.png" alt="Hummer drill 1" width="126" height="112">
-                                <h3>Перфоратор BOSCH BFG 3000</h3>
-                                <P><del>22500 P.</del></P>
+                                <a href="#">купить</a>
+                                <a href="#">в закладки</a>
+                                <img src="img/hummer-drill.png" alt="Перфоратор 1" width="126" height="112">
+                                <h3>Перфоратор <span>bosch bfg 3000</span></h3>
+                                <p><del>22500 P.</del></p>
                                 <a href="#">15500 P.</a>
                             </div>
                             <div>
                                 <a href="#">КУПИТЬ</a>
                                 <a href="#">В ЗАКЛАДКИ</a>
-                                <img src="img/hummer-drill-2.png" alt="Hummer drill 2" width="144" height="128">
-                                <h3>Перфоратор BOSCH BFG 6000</h3>
-                                <P><del>30500 P.</del></P>
+                                <img src="img/hummer-drill-2.png" alt="Перфоратор 2" width="144" height="128">
+                                <h3>Перфоратор <span>bosch bfg 6000</span></h3>
+                                <p><del>30500 P.</del></p>
                                 <a href="#">25500 P.</a>
                             </div>
                             <div>
                                 <a href="#">КУПИТЬ</a>
                                 <a href="#">В ЗАКЛАДКИ</a>
-                                <img src="img/hummer-drill.png" alt="Hummer drill 1" width="126" height="112">
-                                <h3>Перфоратор BOSCH BFG 2000</h3>
+                                <img src="img/hummer-drill.png" alt="Перфоратор 1" width="126" height="112">
+                                <h3>Перфоратор <span>bosch bfg 2000</span></h3>
                                 <a href="#">12500 P.</a>
                             </div>
                             <div>
                                 <a href="#">КУПИТЬ</a>
                                 <a href="#">В ЗАКЛАДКИ</a>
-                                <img src="img/hummer-drill.png" alt="Hummer drill 1" width="126" height="112">
-                                <h3>Перфоратор BOSCH BFG 3000</h3>
-                                <P><del>22500 P.</del></P>
+                                <img src="img/hummer-drill.png" alt="Перфоратор 1" width="126" height="112">
+                                <h3>Перфоратор <span>bosch bfg 3000</span></h3>
+                                <p><del>22500 P.</del></p>
                                 <a href="#">15500 P.</a>
                             </div>
                             <div>
                                 <a href="#">КУПИТЬ</a>
                                 <a href="#">В ЗАКЛАДКИ</a>
-                                <img src="img/hummer-drill-2.png" alt="Hummer drill 2" width="144" height="128">
-                                <h3>Перфоратор BOSCH BFG 6000</h3>
-                                <P><del>30500 P.</del></P>
+                                <img src="img/hummer-drill-2.png" alt="Перфоратор 2" width="144" height="128">
+                                <h3>Перфоратор <span>bosch bfg 6000</span></h3>
+                                <p><del>30500 P.</del></p>
                                 <a href="#">25500 P.</a>
                             </div>
                             <div>
                                 <a href="#">КУПИТЬ</a>
                                 <a href="#">В ЗАКЛАДКИ</a>
-                                <img src="img/hummer-drill.png" alt="Hummer drill 1" width="126" height="112">
-                                <h3>Перфоратор BOSCH BFG 2000</h3>
+                                <img src="img/hummer-drill.png" alt="Перфоратор 1" width="126" height="112">
+                                <h3>Перфоратор <span>bosch bfg 2000</span></h3>
                                 <a href="#">12500 P.</a>
                             </div>
                             <div>
                                 <a href="#">КУПИТЬ</a>
                                 <a href="#">В ЗАКЛАДКИ</a>
-                                <img src="img/hummer-drill.png" alt="Hummer drill 1" width="144" height="128">
-                                <h3>Перфоратор BOSCH BFG 3000</h3>
-                                <P><del>22500 P.</del></P>
+                                <img src="img/hummer-drill.png" alt="Перфоратор 1" width="144" height="128">
+                                <h3>Перфоратор <span>bosch bfg 3000</span></h3>
+                                <p><del>22500 P.</del></p>
                                 <a href="#">15500 P.</a>
                             </div>
                             <div>
                                 <a href="#">КУПИТЬ</a>
                                 <a href="#">В ЗАКЛАДКИ</a>
-                                <img src="img/hummer-drill-2.png" alt="Hummer drill 2" width="144" height="128">
-                                <h3>Перфоратор BOSCH BFG 6000</h3>
-                                <P><del>30500 P.</del></P>
+                                <img src="img/hummer-drill-2.png" alt="Перфоратор 2" width="144" height="128">
+                                <h3>Перфоратор <span>bosch bfg 6000</span></h3>
+                                <p><del>30500 P.</del></p>
                                 <a href="#">25500 P.</a>
                             </div>
                             <div>
                                 <a href="#">КУПИТЬ</a>
                                 <a href="#">В ЗАКЛАДКИ</a>
-                                <img src="img/hummer-drill.png" alt="Hummer drill 1" width="126" height="112">
-                                <h3>Перфоратор BOSCH BFG 2000</h3>
+                                <img src="img/hummer-drill.png" alt="Перфоратор 1" width="126" height="112">
+                                <h3>Перфоратор <span>bosch bfg 2000</span></h3>
                                 <a href="#">12500 P.</a>
                             </div>
                         </div>
@@ -223,7 +235,7 @@
                                 <li><a href="#">1</a></li>
                                 <li><a href="#">2</a></li>
                                 <li><a href="#">3</a></li>
-                                <li><a href="#">СЛЕДУЮЩАЯ</a></li>
+                                <li><a href="#">следующая</a></li>
                             </ul>
                         </div>
                     </div>
@@ -233,16 +245,31 @@
         </section>
         <section>
             <div>
-                <h2>ПАРА СЛОВ О ПЕРФОРАТАРАХ</h2>
+                <h2>пара слов о перфораторах</h2>
                 <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
                 Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
             </div>
         </section>
+
+        <section>
+            <div>
+                <button type="button" aria-label="Закрыть окно">Закрыть</button>
+                <div>
+                    <img src="http://placehold.it/66x66" alt="Успешно" width="66" height="66">
+                    <p>Товар добавлен в корзину!</p>
+                </div>
+                <div>
+                    <a href="#">оформить заказ</a>
+                    <button type="button" aria-label="Продолжить покупки">продолжить покупки</button>
+                </div>
+            </div>
+        </section>
+        
     </main>
 
     <footer>
         <div>
-            <a href="#" aria-label="На главную"><img src="img/technomart.png" alt="Tehnomart"></a>
+            <a href="#" aria-label="На главную"><img src="img/technomart.png" alt="Техномарт"></a>
             <div>
                 <nav>
                     <ul>
@@ -276,9 +303,9 @@
                     <p> Все права защищены</p>
                 </div>
                 <div>
-                    <a href="#" aria-label="Вконтакте"><img src="http://placehold.it/40x40" alt="vk"></a>
-                    <a href="#" aria-label="Фэйсбук"><img src="http://placehold.it/40x40" alt="facebook"></a>
-                    <a href="#" aria-label="Инстаграмм"><img src="http://placehold.it/40x40" alt="inst"></a>
+                    <a href="#" aria-label="Вконтакте"><img src="http://placehold.it/40x40" alt="Вконтакте"></a>
+                    <a href="#" aria-label="Фэйсбук"><img src="http://placehold.it/40x40" alt="Фэйсбук"></a>
+                    <a href="#" aria-label="Инстаграмм"><img src="http://placehold.it/40x40" alt="Инстаграмм"></a>
                 </div>
                 <div>
                     <div>
