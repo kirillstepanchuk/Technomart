@@ -11,10 +11,14 @@
         <div>
             <div>
                 <div>
-                    <a href="#" aria-label="На главную"><img src="img/technomart.png" alt="Техномарт"></a>
+                    <a href="#" aria-label="На главную">
+                        <img src="img/technomart.png" alt="Техномарт" width="220" height="47">
+                    </a>
                     <form action="https://echo.htmlacademy.ru" method="GET">
-                        <img src="http://placehold.it/20x20" alt="Поиск">
-                        <input type="text" placeholder="Поиск">
+                        <label for="search">
+                            <img src="http://placehold.it/20x20" alt="Поиск">
+                        </label>
+                        <input type="search" name="search" id="search" aria-label="Поиск по сайту" placeholder="Поиск:">
                     </form>
                 </div>  
                 <div>
@@ -99,17 +103,27 @@
                         <div>
                             <h2>Фильтр:</h2>
                         </div>
-                        <form action="https://echo.htmlacademy.ru" method="GET">
+                        <form action="https://echo.htmlacademy.ru" method="POST">
                             <div>
                                 <fieldset>
                                     <legend>Цена:</legend>
-                                    <div>
-                                        <input type="range">
+                                    <div class="range">
+                                        <div class="range__block">
+                                          <div class="range__bar"></div>
+                                          <button class="range__min"></button>
+                                          <button class="range__max"></button>
+                                       </div>
                                     </div>
                                     <div>
-                                        <input type="text">
+                                        <label for="price__min">
+                                            <span class="vissually-hidden">Минимальная цена</span>
+                                        </label>
+                                        <input type="text" id="price__min">
                                         -
-                                        <input type="text">
+                                        <label for="price__max">
+                                            <span class="vissually-hidden">Максимальная цена</span>
+                                        </label>
+                                        <input type="text" id="price__max">
                                     </div>
                                 </fieldset>
                             </div>
@@ -267,7 +281,9 @@
 
     <footer>
         <div>
-            <a href="#" aria-label="На главную"><img src="img/technomart.png" alt="Техномарт"></a>
+            <a href="#" aria-label="На главную">
+                <img src="img/technomart.png" alt="Техномарт" width="220" height="47">
+            </a>
             <div>
                 <nav>
                     <ul>
@@ -301,9 +317,15 @@
                     <p> Все права защищены</p>
                 </div>
                 <div>
-                    <a href="#" aria-label="Вконтакте"><img src="http://placehold.it/40x40" alt="Вконтакте"></a>
-                    <a href="#" aria-label="Фэйсбук"><img src="http://placehold.it/40x40" alt="Фэйсбук"></a>
-                    <a href="#" aria-label="Инстаграмм"><img src="http://placehold.it/40x40" alt="Инстаграмм"></a>
+                    <a href="#" aria-label="Вконтакте">
+                        <img src="http://placehold.it/40x40" alt="Вконтакте" width="40" height="40">
+                    </a>
+                    <a href="#" aria-label="Фэйсбук">
+                        <img src="http://placehold.it/40x40" alt="Фэйсбук" width="40" height="40">
+                    </a>
+                    <a href="#" aria-label="Инстаграмм">
+                        <img src="http://placehold.it/40x40" alt="Инстаграмм" width="40" height="40">
+                    </a>
                 </div>
                 <div>
                     <div>
