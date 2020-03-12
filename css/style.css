@@ -1,0 +1,415 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Cuprum', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.header-headline{
+    font-family: 'Cuprum', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 16px;
+    color: #ee3643;
+}
+
+.header-bookmarks{
+    color: white;
+}
+
+.header-bookmarks:hover{
+    background-color: #ee3643;
+}
+
+.header-basket{
+    color: white;
+}
+
+.header-basket:hover{
+    background-color: #ee3643;
+}
+
+.header-checkout{
+    color: white;
+    background-color: #63a63e;
+}
+
+.header-unit{
+    color: white;
+}
+
+.header{
+    background-color: #f3f7f9;
+}
+
+.header-top{
+    background-color: #293449;
+}
+
+.navigaiton{
+    background-color: #32425c;
+}
+
+.phone-number{
+    font-size: 21px;
+    color: #ee3643;
+}
+
+.catalog-link{
+    font-size: 13px;
+    color: #000000;
+}
+
+.catalog-headline{
+    background-color: #f2f6f8;
+}
+
+.catalog-headline-text{
+    font-size: 30px;
+    color: #32425c;
+}
+
+.catalog-title{
+    font-size: 13px;
+}
+
+.adress{
+    font-size: 14px;
+    color: #32425c;
+}
+
+.account-name{
+    font-size: 21px;
+    color: #000000;
+}
+
+.my-orders{
+    font-size: 16px;
+    color: #32425c;
+}
+
+.user-account{
+    font-size: 16px;
+    color: #32425c;
+}
+
+.sign-in-button{
+    font-size: 21px;
+    color: #000000;
+    background-color: white;
+}
+
+.registration{
+    font-size: 21px;
+    color: #000000;
+    background-color: white;
+}
+
+.block-material{
+    background-color: #ffbf47;
+}
+
+.block-tool{
+    background-color: #3bbce3;
+}
+
+.block-equipment{
+    background-color: #dc91d8;
+}
+
+.block-discount{
+    background-color: #8ed78f;
+}
+
+.block-delivery{
+    background-color: #ffc047;
+}
+
+.block-drill{
+    background: url('../img/slider-2.jpg') no-repeat;
+}
+
+.block-hammer-drill{
+    background: url('../img/slider-1.jpg') no-repeat;
+
+}
+
+.popular-product{
+    background-color: #f9f5f0;
+}
+
+.service{
+    background-color: #f5f8f7;
+}
+
+.block-title{
+    font-family: 'Cuprum', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: white;
+}
+
+.block-text{
+    font-size: 14px;
+    color: white;
+}
+
+.slider-block-button{
+    font-size: 14px;
+    color: white;
+}
+
+.slider-block-title{
+    font-size: 36px;
+    color: white;
+}
+
+.slider-block-inscription{
+    font-size: 18px;
+    color: white;
+}
+
+.product-name{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+}
+
+.product-old-price{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    color: #a9a9a9;
+}
+
+.product-price{
+    background-image: url('../img/red-button.svg');
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    color: white;
+}
+
+.popular-headline{
+    font-size: 30px;
+    color: #32425c;
+}
+
+.popular-button{
+    font-size: 14px;
+    color: white;
+    background-color: #ee3643;
+}
+
+.service-headline{
+    font-size: 30px;
+}
+
+.service-inscription{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.service-text{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.service-button{
+    font-family: 'Cuprum', sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    color: white;
+    background-color: #32425c;
+}
+
+.service-button:hover{
+    color: #32425c;
+    background-color: white;
+}
+
+.service-title{
+    font-size: 36px;
+    color: #32425c;
+}
+
+.about-us-title{
+    font-size: 30px;
+}
+
+.about-us-inscription{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.about-us-company{
+    font-size: 18px;
+}
+
+.about-us-button{
+    font-size: 14px;
+    color: white;
+    background-color: #ee3643;
+}
+
+.feedback-title{
+    font-size: 18px;
+}
+
+.feedback-button{
+    font-size: 14px;
+    background-color: #ee3643;
+    color: white;
+}
+
+.checkout-inscription{
+    font-size: 30px;
+}
+
+.checkout-button{
+    font-size: 14px;
+    background-color: #ee3643;
+}
+
+.catalog-link{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+}
+
+.filter{
+    background-color: #f2f6f8;
+}
+
+.filter-title{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+.range{
+    background-color: #f2f6f8;
+}
+
+.range-input{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+}
+
+.filter-option{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.filter-button{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+}
+
+.sorting{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    background-color: #f2f6f8;
+}
+
+.sorting-unit{
+    font-size: 13px;
+}
+
+.buy-button{
+    font-size: 14px;
+    color: #32425c;
+    border: 3px solid #63a63e;
+}
+
+.buy-button:hover{
+    color: white;
+    background-color: #63a63e;
+    border: 3px solid #63a63e;
+}
+
+.to-bookmarks-button{
+    font-size: 14px;
+    color: #32425c;
+    border: 3px solid #63a63e;
+}
+
+.to-bookmarks-button:hover{
+    color: white;
+    background-color: #63a63e;
+    border: 3px solid #63a63e;
+}
+
+.page{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.page-number{
+    color: black;
+
+}
+
+.page-number:hover{
+    background-color: #ee3643;
+    color: white;
+}
+
+.about-drill{
+    background-color: #f2f6f8;
+}
+
+.about-drill-title{
+    font-size: 30px;
+}
+
+.about-drill-inscription{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.footer-unit{
+    font-size: 18px;
+    color: #f3f7f9;
+}
+
+.footer-element{
+    font-size: 18px;
+    color: #ffd180;
+}
+
+.footer-adress{
+    font-size: 18px;
+    color: #f3f7f9;
+}
+
+.footer-phone-number{
+    font-size: 18px;
+    color: #f3f7f9;
+}
+
+.footer-company{
+    font-size: 16px;
+    color: #f3f7f9;
+}
+
+.footer-link{
+    font-size: 16px;
+    color: #ffd180;
+}
+
+.footer-text{
+    font-size: 16px;
+    color: white;
+}
+
+.footer{
+    background-color: #32425c;
+}
+
+.footer-bottom{
+    background-color: #293449;
+}
