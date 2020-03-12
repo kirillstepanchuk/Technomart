@@ -1,21 +1,22 @@
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Cuprum', sans-serif;
+    font-family: 'Cuprum', "Arial", sans-serif;
     font-weight: 400;
     font-size: 17px;
 }
 
 .header-headline{
-    font-family: 'Cuprum', sans-serif;
+    font-family: 'Cuprum', "Arial", sans-serif;
     font-weight: 400;
     font-style: italic;
     font-size: 16px;
     color: #ee3643;
+    line-height: 23px;
 }
 
 .header-bookmarks{
-    color: white;
+    color: #ffffff;
 }
 
 .header-bookmarks:hover{
@@ -23,7 +24,7 @@ body{
 }
 
 .header-basket{
-    color: white;
+    color: #ffffff;
 }
 
 .header-basket:hover{
@@ -31,12 +32,12 @@ body{
 }
 
 .header-checkout{
-    color: white;
+    color: #ffffff;
     background-color: #63a63e;
 }
 
 .header-unit{
-    color: white;
+    color: #ffffff;
 }
 
 .header{
@@ -97,13 +98,13 @@ body{
 .sign-in-button{
     font-size: 21px;
     color: #000000;
-    background-color: white;
+    background-color: #ffffff;
 }
 
 .registration{
     font-size: 21px;
     color: #000000;
-    background-color: white;
+    background-color: #ffffff;
 }
 
 .block-material{
@@ -144,48 +145,49 @@ body{
 }
 
 .block-title{
-    font-family: 'Cuprum', sans-serif;
+    font-family: 'Cuprum', "Arial", sans-serif;
     font-weight: 700;
     font-size: 24px;
-    color: white;
+    color: #ffffff;
 }
 
 .block-text{
     font-size: 14px;
-    color: white;
+    color: #ffffff;
 }
 
 .slider-block-button{
     font-size: 14px;
-    color: white;
+    color: #ffffff;
 }
 
 .slider-block-title{
     font-size: 36px;
-    color: white;
+    color: #ffffff;
 }
 
 .slider-block-inscription{
     font-size: 18px;
-    color: white;
+    color: #ffffff;
 }
 
 .product-name{
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans', "Arial", sans-serif;
     font-weight: 700;
+    line-height: 20px;
 }
 
 .product-old-price{
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans', "Arial", sans-serif;
     font-weight: 700;
     color: #a9a9a9;
 }
 
 .product-price{
     background-image: url('../img/red-button.svg');
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans', "Arial", sans-serif;
     font-weight: 700;
-    color: white;
+    color: #ffffff;
 }
 
 .popular-headline{
@@ -195,7 +197,7 @@ body{
 
 .popular-button{
     font-size: 14px;
-    color: white;
+    color: #ffffff;
     background-color: #ee3643;
 }
 
@@ -204,28 +206,30 @@ body{
 }
 
 .service-inscription{
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans', "Arial", sans-serif;
     font-weight: 400;
     font-size: 13px;
+    line-height: 24px;
 }
 
 .service-text{
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans', "Arial", sans-serif;
     font-weight: 400;
     font-size: 13px;
+    line-height: 24px;
 }
 
 .service-button{
-    font-family: 'Cuprum', sans-serif;
+    font-family: 'Cuprum', "Arial", sans-serif;
     font-weight: 700;
     font-size: 21px;
-    color: white;
+    color: #ffffff;
     background-color: #32425c;
 }
 
 .service-button:hover{
     color: #32425c;
-    background-color: white;
+    background-color: #ffffff;
 }
 
 .service-title{
@@ -238,9 +242,10 @@ body{
 }
 
 .about-us-inscription{
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans', "Arial", sans-serif;
     font-weight: 400;
     font-size: 13px;
+    line-height: 24px;
 }
 
 .about-us-company{
@@ -249,7 +254,7 @@ body{
 
 .about-us-button{
     font-size: 14px;
-    color: white;
+    color: #ffffff;
     background-color: #ee3643;
 }
 
@@ -260,7 +265,7 @@ body{
 .feedback-button{
     font-size: 14px;
     background-color: #ee3643;
-    color: white;
+    color: #ffffff;
 }
 
 .checkout-inscription{
@@ -273,7 +278,7 @@ body{
 }
 
 .catalog-link{
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans', "Arial", sans-serif;
     font-weight: 400;
 }
 
@@ -282,7 +287,7 @@ body{
 }
 
 .filter-title{
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans', "Arial", sans-serif;
     font-weight: 700;
     font-size: 17px;
 }
@@ -292,23 +297,23 @@ body{
 }
 
 .range-input{
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans', "Arial", sans-serif;
     font-weight: 400;
 }
 
 .filter-option{
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans', "Arial", sans-serif;
     font-weight: 400;
     font-size: 15px;
 }
 
 .filter-button{
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans', "Arial", sans-serif;
     font-weight: 400;
 }
 
 .sorting{
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans', "Arial", sans-serif;
     font-weight: 400;
     background-color: #f2f6f8;
 }
@@ -324,7 +329,7 @@ body{
 }
 
 .buy-button:hover{
-    color: white;
+    color: #ffffff;
     background-color: #63a63e;
     border: 3px solid #63a63e;
 }
@@ -336,13 +341,13 @@ body{
 }
 
 .to-bookmarks-button:hover{
-    color: white;
+    color: #ffffff;
     background-color: #63a63e;
     border: 3px solid #63a63e;
 }
 
 .page{
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans', "Arial", sans-serif;
     font-weight: 400;
     font-size: 13px;
 }
@@ -354,7 +359,7 @@ body{
 
 .page-number:hover{
     background-color: #ee3643;
-    color: white;
+    color: #ffffff;
 }
 
 .about-drill{
@@ -366,9 +371,10 @@ body{
 }
 
 .about-drill-inscription{
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans', "Arial", sans-serif;
     font-weight: 400;
     font-size: 13px;
+    line-height: 24px;
 }
 
 .footer-unit{
@@ -384,16 +390,19 @@ body{
 .footer-adress{
     font-size: 18px;
     color: #f3f7f9;
+    line-height: 24px;
 }
 
 .footer-phone-number{
     font-size: 18px;
     color: #f3f7f9;
+    line-height: 24px;
 }
 
 .footer-company{
     font-size: 16px;
     color: #f3f7f9;
+    line-height: 18px;
 }
 
 .footer-link{
@@ -403,7 +412,7 @@ body{
 
 .footer-text{
     font-size: 16px;
-    color: white;
+    color: #ffffff;
 }
 
 .footer{
