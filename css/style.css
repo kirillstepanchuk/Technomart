@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+
     font-family: 'Cuprum', "Arial", sans-serif;
     font-weight: 400;
     font-size: 17px;
@@ -19,25 +20,50 @@ body{
     color: #ffffff;
 }
 
-.header-bookmarks:hover{
-    background-color: #ee3643;
+.header-bookmarks:active{
+    color: #999ca1;
+
+    background-color: #161d29;
 }
 
 .header-basket{
     color: #ffffff;
 }
 
-.header-basket:hover{
-    background-color: #ee3643;
+.header-basket:active{
+    color: #999ca1;
+
+    background-color: #161d29;
 }
 
 .header-checkout{
     color: #ffffff;
+
     background-color: #63a63e;
+}
+
+.header-checkout:hover{
+    background-color: #5fbb2d;
+}
+
+.header-checkout:active{
+    color: #999ca1;
+
+    background-color: #518534;
 }
 
 .header-unit{
     color: #ffffff;
+}
+
+.header-unit:hover{
+    background-color: #293449;
+}
+
+.header-unit:active{
+    background-color: #293449;
+
+    color: #999ca1;
 }
 
 .header{
@@ -85,9 +111,21 @@ body{
     color: #000000;
 }
 
+.account-name:active{
+    color: #b7bfc8;
+}
+
 .my-orders{
     font-size: 16px;
     color: #32425c;
+}
+
+.my-orders:hover{
+    color: #ee3643;
+}
+
+.my-orders:active{
+    color: #b7bfc8;
 }
 
 .user-account{
@@ -95,16 +133,42 @@ body{
     color: #32425c;
 }
 
+.user-account:hover{
+    color: #ee3643;
+}
+
+.user-account:active{
+    color: #b7bfc8;
+}
+
 .sign-in-button{
     font-size: 21px;
     color: #000000;
+
     background-color: #ffffff;
+}
+
+.sign-in-button:hover{
+    color: #ee3643;
+}
+
+.sign-in-button:active{
+    color: #b2b2b2;
 }
 
 .registration{
     font-size: 21px;
     color: #000000;
+
     background-color: #ffffff;
+}
+
+.registration:hover{
+    color: #ee3643;
+}
+
+.registration:active{
+    color: #b2b2b2;
 }
 
 .block-material{
@@ -128,10 +192,12 @@ body{
 }
 
 .block-drill{
+    background-color: #a37869;
     background: url('../img/slider-2.jpg') no-repeat;
 }
 
 .block-hammer-drill{
+    background-color: #9d8c76;;
     background: url('../img/slider-1.jpg') no-repeat;
 
 }
@@ -157,8 +223,18 @@ body{
 }
 
 .slider-block-button{
+    background-color: #ee3643;
+
     font-size: 14px;
     color: #ffffff;
+}
+
+.slider-block-button:hover{
+    background-color: #ca2c37;
+}
+
+.slider-block-button:active{
+    background-color: #ba2732;
 }
 
 .slider-block-title{
@@ -184,7 +260,8 @@ body{
 }
 
 .product-price{
-    background-image: url('../img/red-button.svg');
+    background-color: #ee3643;
+
     font-family: 'PT Sans', "Arial", sans-serif;
     font-weight: 700;
     color: #ffffff;
@@ -198,6 +275,7 @@ body{
 .popular-button{
     font-size: 14px;
     color: #ffffff;
+
     background-color: #ee3643;
 }
 
@@ -224,12 +302,12 @@ body{
     font-weight: 700;
     font-size: 21px;
     color: #ffffff;
+
     background-color: #32425c;
 }
 
 .service-button:hover{
-    color: #32425c;
-    background-color: #ffffff;
+    background-color: #293449;
 }
 
 .service-title{
@@ -255,6 +333,7 @@ body{
 .about-us-button{
     font-size: 14px;
     color: #ffffff;
+
     background-color: #ee3643;
 }
 
@@ -264,8 +343,9 @@ body{
 
 .feedback-button{
     font-size: 14px;
-    background-color: #ee3643;
     color: #ffffff;
+    
+    background-color: #ee3643;
 }
 
 .checkout-inscription{
@@ -274,6 +354,7 @@ body{
 
 .checkout-button{
     font-size: 14px;
+
     background-color: #ee3643;
 }
 
@@ -320,30 +401,58 @@ body{
 
 .sorting-unit{
     font-size: 13px;
+    color: #b2b2b2;
+    text-decoration: none;
+
+    border-bottom: 1px dotted #ee3643;
+}
+
+.sorting-unit:hover{
+    color: #000000;
+
+    border-bottom: 1px solid #ee3643;
+}
+
+.sorting-unit:active{
+    color: #ee3643;
+
+    border: none;
 }
 
 .buy-button{
     font-size: 14px;
-    color: #32425c;
-    border: 3px solid #63a63e;
+    color: #ffffff;
+
+    background-color: #63a63e;
 }
 
 .buy-button:hover{
     color: #ffffff;
-    background-color: #63a63e;
-    border: 3px solid #63a63e;
+
+    background-color: #5fbb2d;
+}
+
+.buy-button:active{
+    background-color: #518534;
 }
 
 .to-bookmarks-button{
     font-size: 14px;
     color: #32425c;
+
     border: 3px solid #63a63e;
 }
 
 .to-bookmarks-button:hover{
-    color: #ffffff;
-    background-color: #63a63e;
-    border: 3px solid #63a63e;
+    color: #32425c;
+
+    border: 3px solid #32425c;
+}
+
+.to-bookmarks-button:active{
+    color: #c1c6ce;
+
+    border: 3px solid #c1c6ce;
 }
 
 .page{
@@ -355,11 +464,15 @@ body{
 .page-number{
     color: black;
 
+    border: 2px solid #e5e5e5;
 }
 
 .page-number:hover{
-    background-color: #ee3643;
-    color: #ffffff;
+    border: 2px solid #bdc6ca;
+}
+
+.page-number:active{
+    border: 2px solid #ee3643;
 }
 
 .about-drill{
@@ -380,11 +493,29 @@ body{
 .footer-unit{
     font-size: 18px;
     color: #f3f7f9;
+    text-decoration: none;
+}
+
+.footer-unit:hover{
+    text-decoration: underline;
+}
+
+.footer-unit:active{
+    color: #929caa;
 }
 
 .footer-element{
     font-size: 18px;
     color: #ffd180;
+    text-decoration: none;
+}
+
+.footer-element:hover{
+    text-decoration: underline;
+}
+
+.footer-element:active{
+    color: #998a6e;
 }
 
 .footer-adress{
@@ -408,6 +539,16 @@ body{
 .footer-link{
     font-size: 16px;
     color: #ffd180;
+    text-decoration: none;
+}
+
+.footer-link:hover{
+    text-decoration: underline;
+}
+
+.footer-link:active{
+    color: #ee3643;
+    text-decoration: none;
 }
 
 .footer-text{
