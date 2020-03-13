@@ -2,13 +2,13 @@ body{
     margin: 0;
     padding: 0;
 
-    font-family: 'Cuprum', "Arial", sans-serif;
+    font-family: 'Cuprum', 'Arial', sans-serif;
     font-weight: 400;
     font-size: 17px;
 }
 
 .header-headline{
-    font-family: 'Cuprum', "Arial", sans-serif;
+    font-family: 'Cuprum', 'Arial', sans-serif;
     font-weight: 400;
     font-style: italic;
     font-size: 16px;
@@ -211,7 +211,7 @@ body{
 }
 
 .block-title{
-    font-family: 'Cuprum', "Arial", sans-serif;
+    font-family: 'Cuprum', 'Arial', sans-serif;
     font-weight: 700;
     font-size: 24px;
     color: #ffffff;
@@ -248,13 +248,13 @@ body{
 }
 
 .product-name{
-    font-family: 'PT Sans', "Arial", sans-serif;
+    font-family: 'PT Sans', 'Arial', sans-serif;
     font-weight: 700;
     line-height: 20px;
 }
 
 .product-old-price{
-    font-family: 'PT Sans', "Arial", sans-serif;
+    font-family: 'PT Sans', 'Arial', sans-serif;
     font-weight: 700;
     color: #a9a9a9;
 }
@@ -262,7 +262,7 @@ body{
 .product-price{
     background-color: #ee3643;
 
-    font-family: 'PT Sans', "Arial", sans-serif;
+    font-family: 'PT Sans', 'Arial', sans-serif;
     font-weight: 700;
     color: #ffffff;
 }
@@ -284,21 +284,21 @@ body{
 }
 
 .service-inscription{
-    font-family: 'PT Sans', "Arial", sans-serif;
+    font-family: 'PT Sans', 'Arial', sans-serif;
     font-weight: 400;
     font-size: 13px;
     line-height: 24px;
 }
 
 .service-text{
-    font-family: 'PT Sans', "Arial", sans-serif;
+    font-family: 'PT Sans', 'Arial', sans-serif;
     font-weight: 400;
     font-size: 13px;
     line-height: 24px;
 }
 
 .service-button{
-    font-family: 'Cuprum', "Arial", sans-serif;
+    font-family: 'Cuprum', 'Arial', sans-serif;
     font-weight: 700;
     font-size: 21px;
     color: #ffffff;
@@ -320,7 +320,7 @@ body{
 }
 
 .about-us-inscription{
-    font-family: 'PT Sans', "Arial", sans-serif;
+    font-family: 'PT Sans', 'Arial', sans-serif;
     font-weight: 400;
     font-size: 13px;
     line-height: 24px;
@@ -359,7 +359,7 @@ body{
 }
 
 .catalog-link{
-    font-family: 'PT Sans', "Arial", sans-serif;
+    font-family: 'PT Sans', 'Arial', sans-serif;
     font-weight: 400;
 }
 
@@ -368,7 +368,7 @@ body{
 }
 
 .filter-title{
-    font-family: 'PT Sans', "Arial", sans-serif;
+    font-family: 'PT Sans', 'Arial', sans-serif;
     font-weight: 700;
     font-size: 17px;
 }
@@ -378,23 +378,23 @@ body{
 }
 
 .range-input{
-    font-family: 'PT Sans', "Arial", sans-serif;
+    font-family: 'PT Sans', 'Arial', sans-serif;
     font-weight: 400;
 }
 
 .filter-option{
-    font-family: 'PT Sans', "Arial", sans-serif;
+    font-family: 'PT Sans', 'Arial', sans-serif;
     font-weight: 400;
     font-size: 15px;
 }
 
 .filter-button{
-    font-family: 'PT Sans', "Arial", sans-serif;
+    font-family: 'PT Sans', 'Arial', sans-serif;
     font-weight: 400;
 }
 
 .sorting{
-    font-family: 'PT Sans', "Arial", sans-serif;
+    font-family: 'PT Sans', 'Arial', sans-serif;
     font-weight: 400;
     background-color: #f2f6f8;
 }
@@ -456,7 +456,7 @@ body{
 }
 
 .page{
-    font-family: 'PT Sans', "Arial", sans-serif;
+    font-family: 'PT Sans', 'Arial', sans-serif;
     font-weight: 400;
     font-size: 13px;
 }
@@ -484,7 +484,7 @@ body{
 }
 
 .about-drill-inscription{
-    font-family: 'PT Sans', "Arial", sans-serif;
+    font-family: 'PT Sans', 'Arial', sans-serif;
     font-weight: 400;
     font-size: 13px;
     line-height: 24px;
