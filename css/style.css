@@ -18,6 +18,7 @@ body{
 
 .header-bookmarks{
     color: #ffffff;
+    text-decoration: none;
 }
 
 .header-bookmarks:active{
@@ -28,6 +29,7 @@ body{
 
 .header-basket{
     color: #ffffff;
+    text-decoration: none;
 }
 
 .header-basket:active{
@@ -38,6 +40,7 @@ body{
 
 .header-checkout{
     color: #ffffff;
+    text-decoration: none;
 
     background-color: #63a63e;
 }
@@ -54,6 +57,7 @@ body{
 
 .header-unit{
     color: #ffffff;
+    text-decoration: none;
 }
 
 .header-unit:hover{
@@ -61,9 +65,9 @@ body{
 }
 
 .header-unit:active{
-    background-color: #293449;
-
     color: #999ca1;
+
+    background-color: #293449;
 }
 
 .header{
@@ -74,6 +78,24 @@ body{
     background-color: #293449;
 }
 
+.logo{
+    font-size: 24px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    background-color: #ee3643;
+    border-bottom: 5px solid #b52933;
+}
+
+.logo:hover{
+    background-color: #ca2c37;
+}
+
+.logo:active{
+    background-color: #ba2732;
+}
+
 .navigaiton{
     background-color: #32425c;
 }
@@ -81,11 +103,13 @@ body{
 .phone-number{
     font-size: 21px;
     color: #ee3643;
+    text-decoration: none;
 }
 
 .catalog-link{
     font-size: 13px;
     color: #000000;
+    text-decoration: none;
 }
 
 .catalog-headline{
@@ -95,10 +119,12 @@ body{
 .catalog-headline-text{
     font-size: 30px;
     color: #32425c;
+    text-transform: uppercase;
 }
 
 .catalog-title{
     font-size: 13px;
+    text-transform: uppercase;
 }
 
 .adress{
@@ -109,6 +135,7 @@ body{
 .account-name{
     font-size: 21px;
     color: #000000;
+    text-decoration: none;
 }
 
 .account-name:active{
@@ -159,6 +186,7 @@ body{
 .registration{
     font-size: 21px;
     color: #000000;
+    text-decoration: none;
 
     background-color: #ffffff;
 }
@@ -192,13 +220,11 @@ body{
 }
 
 .block-drill{
-    background-color: #a37869;
-    background: url('../img/slider-2.jpg') no-repeat;
+    background: url('../img/slider-2.jpg') no-repeat #a37869;
 }
 
 .block-hammer-drill{
-    background-color: #9d8c76;;
-    background: url('../img/slider-1.jpg') no-repeat;
+    background: url('../img/slider-1.jpg') no-repeat #9d8c76;
 
 }
 
@@ -220,13 +246,17 @@ body{
 .block-text{
     font-size: 14px;
     color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 .slider-block-button{
-    background-color: #ee3643;
-
     font-size: 14px;
     color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    background-color: #ee3643;
 }
 
 .slider-block-button:hover{
@@ -240,6 +270,7 @@ body{
 .slider-block-title{
     font-size: 36px;
     color: #ffffff;
+    text-transform: uppercase;
 }
 
 .slider-block-inscription{
@@ -253,6 +284,10 @@ body{
     line-height: 20px;
 }
 
+.product-name span{
+    text-transform: uppercase;
+}
+
 .product-old-price{
     font-family: 'PT Sans', 'Arial', sans-serif;
     font-weight: 700;
@@ -260,27 +295,40 @@ body{
 }
 
 .product-price{
-    background-color: #ee3643;
-
     font-family: 'PT Sans', 'Arial', sans-serif;
     font-weight: 700;
     color: #ffffff;
+    text-decoration: none;
+
+    background-color: #ee3643;
 }
 
 .popular-headline{
     font-size: 30px;
     color: #32425c;
+    text-transform: uppercase;
 }
 
 .popular-button{
     font-size: 14px;
     color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
 
     background-color: #ee3643;
 }
 
+.popular-button:hover{
+    background-color: #ca2c37;
+}
+
+.popular-button:active{
+    background-color: #ba2732;
+}
+
 .service-headline{
     font-size: 30px;
+    text-transform: uppercase;
 }
 
 .service-inscription{
@@ -313,10 +361,12 @@ body{
 .service-title{
     font-size: 36px;
     color: #32425c;
+    text-transform: uppercase;
 }
 
 .about-us-title{
     font-size: 30px;
+    text-transform: uppercase;
 }
 
 .about-us-inscription{
@@ -333,8 +383,18 @@ body{
 .about-us-button{
     font-size: 14px;
     color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
 
     background-color: #ee3643;
+}
+
+.about-us-button:hover{
+    background-color: #ca2c37;
+}
+
+.about-us-button:active{
+    background-color: #ba2732;
 }
 
 .feedback-title{
@@ -344,6 +404,7 @@ body{
 .feedback-button{
     font-size: 14px;
     color: #ffffff;
+    text-transform: uppercase;
     
     background-color: #ee3643;
 }
@@ -354,13 +415,25 @@ body{
 
 .checkout-button{
     font-size: 14px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
 
     background-color: #ee3643;
+}
+
+.checkout-button:hover{
+    background-color: #ca2c37;
+}
+
+.checkout-button:active{
+    background-color: #ba2732;
 }
 
 .catalog-link{
     font-family: 'PT Sans', 'Arial', sans-serif;
     font-weight: 400;
+    text-transform: uppercase;
 }
 
 .filter{
@@ -371,6 +444,7 @@ body{
     font-family: 'PT Sans', 'Arial', sans-serif;
     font-weight: 700;
     font-size: 17px;
+    text-transform: uppercase;
 }
 
 .range{
@@ -386,11 +460,13 @@ body{
     font-family: 'PT Sans', 'Arial', sans-serif;
     font-weight: 400;
     font-size: 15px;
+    text-transform: uppercase;
 }
 
 .filter-button{
     font-family: 'PT Sans', 'Arial', sans-serif;
     font-weight: 400;
+    text-transform: uppercase;
 }
 
 .sorting{
@@ -403,6 +479,7 @@ body{
     font-size: 13px;
     color: #b2b2b2;
     text-decoration: none;
+    text-transform: uppercase;
 
     border-bottom: 1px dotted #ee3643;
 }
@@ -422,6 +499,8 @@ body{
 .buy-button{
     font-size: 14px;
     color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
 
     background-color: #63a63e;
 }
@@ -439,6 +518,8 @@ body{
 .to-bookmarks-button{
     font-size: 14px;
     color: #32425c;
+    text-decoration: none;
+    text-transform: uppercase;
 
     border: 3px solid #63a63e;
 }
@@ -463,6 +544,7 @@ body{
 
 .page-number{
     color: black;
+    text-transform: uppercase;
 
     border: 2px solid #e5e5e5;
 }
@@ -481,6 +563,7 @@ body{
 
 .about-drill-title{
     font-size: 30px;
+    text-transform: uppercase;
 }
 
 .about-drill-inscription{
