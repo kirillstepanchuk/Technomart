@@ -220,11 +220,11 @@ body{
 }
 
 .block-drill{
-    background: url('../img/slider-2.jpg') no-repeat #a37869;
+    background: #a37869 url('../img/slider-2.jpg') no-repeat;
 }
 
 .block-hammer-drill{
-    background: url('../img/slider-1.jpg') no-repeat #9d8c76;
+    background: #9d8c76 url('../img/slider-1.jpg') no-repeat;
 
 }
 
@@ -248,9 +248,20 @@ body{
     color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
+
+    background-color: rgba(178, 178, 178, 0.5);
+    
 }
 
-.slider-block-button{
+.block-text:hover{
+    background-color: #cccccc;
+}
+
+.block-text:active{
+    background-color: #b2b2b2;
+}
+
+.button-red{          
     font-size: 14px;
     color: #ffffff;
     text-decoration: none;
@@ -259,11 +270,11 @@ body{
     background-color: #ee3643;
 }
 
-.slider-block-button:hover{
+.button-red:hover{
     background-color: #ca2c37;
 }
 
-.slider-block-button:active{
+.button-red:active{
     background-color: #ba2732;
 }
 
@@ -307,23 +318,6 @@ body{
     font-size: 30px;
     color: #32425c;
     text-transform: uppercase;
-}
-
-.popular-button{
-    font-size: 14px;
-    color: #ffffff;
-    text-decoration: none;
-    text-transform: uppercase;
-
-    background-color: #ee3643;
-}
-
-.popular-button:hover{
-    background-color: #ca2c37;
-}
-
-.popular-button:active{
-    background-color: #ba2732;
 }
 
 .service-headline{
@@ -380,19 +374,6 @@ body{
     font-size: 18px;
 }
 
-.about-us-button{
-    font-size: 14px;
-    color: #ffffff;
-    text-decoration: none;
-    text-transform: uppercase;
-
-    background-color: #ee3643;
-}
-
-.about-us-button:hover{
-    background-color: #ca2c37;
-}
-
 .about-us-button:active{
     background-color: #ba2732;
 }
@@ -401,33 +382,8 @@ body{
     font-size: 18px;
 }
 
-.feedback-button{
-    font-size: 14px;
-    color: #ffffff;
-    text-transform: uppercase;
-    
-    background-color: #ee3643;
-}
-
 .checkout-inscription{
     font-size: 30px;
-}
-
-.checkout-button{
-    font-size: 14px;
-    color: #ffffff;
-    text-decoration: none;
-    text-transform: uppercase;
-
-    background-color: #ee3643;
-}
-
-.checkout-button:hover{
-    background-color: #ca2c37;
-}
-
-.checkout-button:active{
-    background-color: #ba2732;
 }
 
 .catalog-link{
@@ -474,6 +430,7 @@ body{
     font-weight: 400;
     background-color: #f2f6f8;
 }
+
 
 .sorting-unit{
     font-size: 13px;
