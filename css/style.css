@@ -1,10 +1,14 @@
 body{
-    margin: 0;
-    padding: 0;
-
     font-family: 'Cuprum', 'Arial', sans-serif;
     font-weight: 400;
     font-size: 17px;
+
+    margin: 0;
+    padding: 0;
+}
+
+.visually-hidden{
+    /* visibility: hidden; */
 }
 
 .header-headline{
@@ -14,6 +18,8 @@ body{
     font-size: 16px;
     color: #ee3643;
     line-height: 23px;
+
+    margin-left: 52px;
 }
 
 .header-bookmarks{
@@ -58,6 +64,7 @@ body{
 .header-unit{
     color: #ffffff;
     text-decoration: none;
+    list-style-type: none;
 }
 
 .header-unit:hover{
@@ -70,12 +77,38 @@ body{
     background-color: #293449;
 }
 
-.header{
+header{
     background-color: #f3f7f9;
 }
 
+
 .header-top{
     background-color: #293449;
+
+    margin-bottom: 42px;
+}
+
+.header-top-content{
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+
+    width: 940px;
+}
+
+.header-top-content-left{
+    display: flex;
+}
+
+.header-mid-content{
+    display: flex;
+    justify-content: space-around;
+}
+
+.header-contact{
+    margin-left: 70px;
+    margin-right: 50px;
 }
 
 .logo{
@@ -86,6 +119,9 @@ body{
 
     background-color: #ee3643;
     border-bottom: 5px solid #b52933;
+
+    width: 200px;
+    height: 63px;
 }
 
 .logo:hover{
@@ -100,16 +136,33 @@ body{
     background-color: #32425c;
 }
 
+.navigation-list{
+    display: flex;
+    justify-content: space-around;
+}
+
 .phone-number{
     font-size: 21px;
     color: #ee3643;
     text-decoration: none;
+
+    border:3px solid #ffffff
+}
+
+.catalog-main-content{
+    display: flex;
+}
+
+.catalog-links{
+    display: flex;
 }
 
 .catalog-link{
     font-size: 13px;
     color: #000000;
     text-decoration: none;
+
+    margin-right: 45px;
 }
 
 .catalog-headline{
@@ -140,6 +193,19 @@ body{
 
 .account-name:active{
     color: #b7bfc8;
+}
+
+.account-links{
+    display: flex;
+}
+
+.account-link{
+    margin-right: 20px;
+}
+
+.header-account-buttons{
+    display: flex;
+    justify-content: flex-end;
 }
 
 .my-orders{
@@ -173,6 +239,11 @@ body{
     color: #000000;
 
     background-color: #ffffff;
+    
+    display: flex;
+
+    width: 121px;
+    height: 45px;
 }
 
 .sign-in-button:hover{
@@ -183,19 +254,22 @@ body{
     color: #b2b2b2;
 }
 
-.registration{
+.registration-text{
     font-size: 21px;
     color: #000000;
     text-decoration: none;
 
     background-color: #ffffff;
+
+    width: 150px;
+    height: 45px;
 }
 
-.registration:hover{
+.registration-text:hover{
     color: #ee3643;
 }
 
-.registration:active{
+.registration-text:active{
     color: #b2b2b2;
 }
 
@@ -205,6 +279,11 @@ body{
 
 .block-tool{
     background-color: #3bbce3;
+}
+
+.main-block{
+    width: 300px;
+    height: 125px;
 }
 
 .block-equipment{
@@ -219,6 +298,28 @@ body{
     background-color: #ffc047;
 }
 
+.content{
+    margin: 0 auto;
+    
+    width: 940px;
+}
+
+.main-top-blocks{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-bot-blocks{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.main-slider-block{
+    width: 620px;
+    height: 266px;
+}
+
 .block-drill{
     background: #a37869 url('../img/slider-2.jpg') no-repeat;
 }
@@ -230,10 +331,44 @@ body{
 
 .popular-product{
     background-color: #f9f5f0;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular-button{
+    width: 253px;
+    height: 38px;
+}
+
+.popular-products{
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular-headline{
+    font-size: 30px;
+    color: #32425c;
+    text-transform: uppercase;
+}
+
+.popular-producer-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular-producer-bot{
+    display: flex;
+    justify-content: space-between;
 }
 
 .service{
     background-color: #f5f8f7;
+}
+
+.servise-use{
+    display: flex;
+    justify-content: space-between;
 }
 
 .block-title{
@@ -295,6 +430,11 @@ body{
     line-height: 20px;
 }
 
+.product-row{
+    display: flex;
+    justify-content: space-between;
+}
+
 .product-name span{
     text-transform: uppercase;
 }
@@ -312,12 +452,6 @@ body{
     text-decoration: none;
 
     background-color: #ee3643;
-}
-
-.popular-headline{
-    font-size: 30px;
-    color: #32425c;
-    text-transform: uppercase;
 }
 
 .service-headline{
@@ -358,6 +492,11 @@ body{
     text-transform: uppercase;
 }
 
+.about-us-content{
+    display: flex;
+    justify-content: space-between;
+}
+
 .about-us-title{
     font-size: 30px;
     text-transform: uppercase;
@@ -374,12 +513,23 @@ body{
     font-size: 18px;
 }
 
-.about-us-button:active{
-    background-color: #ba2732;
+.feedback-content{
+    width: 460px;
+    margin:0 auto;
+}
+
+.feedback-top{
+    display: flex;
+    justify-content: space-between;
 }
 
 .feedback-title{
     font-size: 18px;
+}
+
+.checkout-content{
+    width: 460px;
+    margin: 0 auto;
 }
 
 .checkout-inscription{
@@ -429,8 +579,13 @@ body{
     font-family: 'PT Sans', 'Arial', sans-serif;
     font-weight: 400;
     background-color: #f2f6f8;
+    
+    display: flex;
 }
 
+.sorting-list{
+    display: flex;
+}
 
 .sorting-unit{
     font-size: 13px;
@@ -497,6 +652,8 @@ body{
     font-family: 'PT Sans', 'Arial', sans-serif;
     font-weight: 400;
     font-size: 13px;
+
+    display: flex;
 }
 
 .page-number{
@@ -504,6 +661,8 @@ body{
     text-transform: uppercase;
 
     border: 2px solid #e5e5e5;
+
+    margin-right: 40px;
 }
 
 .page-number:hover{
@@ -528,6 +687,20 @@ body{
     font-weight: 400;
     font-size: 13px;
     line-height: 24px;
+}
+
+.footer-navigation{
+    display: flex;
+}
+
+.footer-nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-info{
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer-unit{
@@ -580,6 +753,8 @@ body{
     font-size: 16px;
     color: #ffd180;
     text-decoration: none;
+
+    margin-right: 50px;
 }
 
 .footer-link:hover{
@@ -602,4 +777,15 @@ body{
 
 .footer-bottom{
     background-color: #293449;
+
 }
+
+.footer-bottom-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-feedback{
+    display: flex;
+}
+
