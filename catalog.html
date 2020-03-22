@@ -49,22 +49,19 @@
                     </a>
                     <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                 </div>
-                <div>
-                    <div>
-                        <a href="#" aria-label="Аккaунт пользователя" class="account-name">
-                            <img src="http://placehold.it/20x20" alt="Пользователь"> Равшан Джамшутович</a>
-                        <a href="#" aria-label="Выход из аккаунта">
-                        <span class="visually-hidden">Выход из аккаунта</span>
-                        <img src="http://placehold.it/20x20" alt="Выйти"></a>
-                    </div>
-                    <ul class="account-links">
+                <div>                   
+                    <a href="#" aria-label="Аккaунт пользователя" class="account-name">
+                        <img src="http://placehold.it/20x20" alt="Пользователь"> Равшан Джамшутович</a>
+                    <a href="#" aria-label="Выход из аккаунта">
+                    <span class="visually-hidden">Выход из аккаунта</span>
+                    <img src="http://placehold.it/20x20" alt="Выйти"></a>                   
+                    <ul class="account-links list">
                         <li class="account-link"><a href="#" class="my-orders">Мои заказы</a></li>
                         <li><a href="#" class="user-account">Личный кабинет</a></li>
                     </ul>
                 </div>
             </div>
-            <div class="header-account-buttons">
-                    
+            <div class="header-account-buttons">                
                 <a href="#">
                     <div class="sign-in-button">
                         <img src="http://placehold.it/20x20" alt="Войти" width="20" height="20">
@@ -75,40 +72,36 @@
                     <a href="#" class="registration-text">Регистрация</a>
                 </div>
             </div>
-            <div class="navigaiton">
-                    <nav>
-                        <ul class="navigation-list">
-                        <li class="header-unit"><a href="#">Главная</a> </li>
-                        <li><a href="#" class="header-unit">Компания</a></li>
-                        <li><a href="#" class="header-unit">Каталог</a></li>
-                        <li><a href="#" class="header-unit">Новости</a></li>
-                        <li><a href="#" class="header-unit">Спецпредложения</a></li>
-                        <li><a href="#" class="header-unit">Доставка</a></li>
-                        <li><a href="#" class="header-unit">Контакты</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <nav class="navigaiton">
+                <ul class="navigation-list list">
+                    <li class="header-unit"><a href="#">Главная</a> </li>
+                    <li><a href="#" class="header-unit">Компания</a></li>
+                    <li><a href="#" class="header-unit">Каталог</a></li>
+                    <li><a href="#" class="header-unit">Новости</a></li>
+                    <li><a href="#" class="header-unit">Спецпредложения</a></li>
+                    <li><a href="#" class="header-unit">Доставка</a></li>
+                    <li><a href="#" class="header-unit">Контакты</a></li>
+                </ul>
+            </nav>      
          </div>
     </header>
 
     <main>
-        <section class="main-blocks-services container">    
-            <div> 
-                <ul class="catalog-links">
-                    <li>
-                        <a href="#" class="catalog-link">Главная</a>
-                    </li>
-                    <li>
-                        <a href="#" class="catalog-link">Каталог</a>
-                    </li>
-                    <li>
-                        <a href="#" class="catalog-link">Инструмент</a>
-                    </li>
-                    <li>
-                        <span class="catalog-link">Перфораторы</span>
-                    </li>
-                </ul>
-            </div>
+        <section class="main-blocks-services container">     
+            <ul class="catalog-links list">
+                <li>
+                    <a href="#" class="catalog-link">Главная</a>
+                </li>
+                <li>
+                    <a href="#" class="catalog-link">Каталог</a>
+                </li>
+                <li>
+                    <a href="#" class="catalog-link">Инструмент</a>
+                </li>
+                <li>
+                    <span class="catalog-link">Перфораторы</span>
+                </li>
+            </ul>
             <div class="catalog-headline">
                 <h2 class="catalog-headline-text">Перфораторы</h2>
             </div>
@@ -117,70 +110,64 @@
                     <div class="filter">
                         <h2 class="catalog-title">Фильтр:</h2>
                     </div>
-                    <form action="https://echo.htmlacademy.ru" method="POST">
-                        <div>
-                            <fieldset>
-                                <legend class="filter-title">Цена:</legend>
-                                <div class="range">
-                                    <div class="range-block">
-                                        <div class="range-bar"></div>
-                                        <button class="range-min"></button>
-                                        <button class="range-max"></button>
-                                    </div>
+                    <form action="https://echo.htmlacademy.ru" method="POST">                     
+                        <fieldset>
+                            <legend class="filter-title">Цена:</legend>
+                            <div class="range">
+                                <div class="range-block">
+                                    <div class="range-bar"></div>
+                                    <button class="range-min"></button>
+                                    <button class="range-max"></button>
                                 </div>
-                                <div class="range-input">
-                                    <label for="price-min" class="vissually-hidden">
-                                        Минимальная цена
-                                    </label>
-                                    <input type="text" id="price-min">
-                                    <span>-</span>
-                                    <label for="price-max" class="vissually-hidden">
-                                        Максимальная цена
-                                    </label>
-                                    <input type="text" id="price-max">
-                                </div>
-                            </fieldset>
-                        </div>
-                        <div>
-                            <fieldset>
-                                <legend class="filter-title">Производители:</legend>
-                                <ul>
-                                    <li><input type="checkbox" name="bosch" id="filter-bosch">
-                                        <label for="filter-bosch" class="filter-option">Bosch</label></li>
-                                    <li><input type="checkbox" name="interskol" id="filter-interskol">
-                                        <label for="filter-interskol" class="filter-option">Интерскол</label></li>
-                                    <li><input type="checkbox" name="makita" id="filter-makita">
-                                        <label for="filter-makita" class="filter-option">Makita</label></li>
-                                    <li><input type="checkbox" name="dewalt" id="filter-dewalt">
-                                        <label for="filter-dewalt" class="filter-option">DeWalt</label></li>
-                                    <li><input type="checkbox" name="hitachi" id="filter-hitachi">
-                                        <label for="filter-hitachi" class="filter-option">Hitachi</label></li>
-                                </ul>
-                            </fieldset>
-                        </div>
-                        <div>
-                            <fieldset>
-                                <legend class="filter-title">Питание:</legend>
-                                <ul>
-                                    <li><input type="radio" name="charge" id="filter-battery"> 
-                                        <label for="filter-battery" class="filter-option">Аккумуляторные</label></li>
-                                    <li><input type="radio" name="charge" id="filter-network">
-                                        <label for="filter-network" class="filter-option">Сетевые</label></li>
-                                </ul>
-                            </fieldset>
-                        </div>
+                            </div>
+                            <div class="range-input">
+                                <label for="price-min" class="vissually-hidden">
+                                    Минимальная цена
+                                </label>
+                                <input type="text" id="price-min">
+                                <span>-</span>
+                                <label for="price-max" class="vissually-hidden">
+                                    Максимальная цена
+                                </label>
+                                <input type="text" id="price-max">
+                            </div>
+                        </fieldset>                                    
+                        <fieldset>
+                            <legend class="filter-title">Производители:</legend>
+                            <ul class="list">
+                                <li><input type="checkbox" name="bosch" id="filter-bosch">
+                                    <label for="filter-bosch" class="filter-option">Bosch</label></li>
+                                <li><input type="checkbox" name="interskol" id="filter-interskol">
+                                    <label for="filter-interskol" class="filter-option">Интерскол</label></li>
+                                <li><input type="checkbox" name="makita" id="filter-makita">
+                                    <label for="filter-makita" class="filter-option">Makita</label></li>
+                                <li><input type="checkbox" name="dewalt" id="filter-dewalt">
+                                    <label for="filter-dewalt" class="filter-option">DeWalt</label></li>
+                                <li><input type="checkbox" name="hitachi" id="filter-hitachi">
+                                    <label for="filter-hitachi" class="filter-option">Hitachi</label></li>
+                            </ul>
+                        </fieldset>                                     
+                        <fieldset>
+                            <legend class="filter-title">Питание:</legend>
+                            <ul class="list">
+                                <li><input type="radio" name="charge" id="filter-battery"> 
+                                    <label for="filter-battery" class="filter-option">Аккумуляторные</label></li>
+                                <li><input type="radio" name="charge" id="filter-network">
+                                    <label for="filter-network" class="filter-option">Сетевые</label></li>
+                            </ul>
+                        </fieldset>                       
                         <button type="submit" class="filter-button">Показать</button>
                     </form>
                 </div>
                 <div>
                     <div class="sorting">
                         <h2 class="catalog-title">Сортировка:</h2>
-                        <ul class="sorting-list">
+                        <ul class="sorting-list list">
                             <li><a href="#" class="sorting-unit">По цене</a></li>
                             <li><a href="#" class="sorting-unit">По типу</a></li>
                             <li><a href="#" class="sorting-unit">По функционалу</a></li>
                         </ul>
-                        <ul class="sorting-list">
+                        <ul class="sorting-list list">
                             <li><a href="#" class="sorting-unit">По возрастанию</a></li>
                             <li><a href="#" class="sorting-unit">По убыванию</a></li>
                         </ul>
@@ -261,15 +248,13 @@
                                 <a href="#" class="product-price">12500 P.</a>
                             </div>
                         </div>
-                    </div>
-                    <div>
-                        <ul class="page">
-                            <li><a href="#" class="page-number">1</a></li>
-                            <li><a href="#" class="page-number">2</a></li>
-                            <li><a href="#" class="page-number">3</a></li>
-                            <li><a href="#" class="page-number">Следующая</a></li>
-                        </ul>
-                    </div>
+                    </div>                    
+                    <ul class="page list">
+                        <li><a href="#" class="page-number">1</a></li>
+                        <li><a href="#" class="page-number">2</a></li>
+                        <li><a href="#" class="page-number">3</a></li>
+                        <li><a href="#" class="page-number">Следующая</a></li>
+                    </ul>                 
                 </div> 
             </div>   
         </section>
@@ -289,13 +274,11 @@
                 <div>
                     <img src="http://placehold.it/66x66" alt="Успешно" width="66" height="66">
                     <p class="checkout-inscription">Товар добавлен в корзину!</p>
-                </div>
-                <div>
-                    <a href="#" class="checkout-button button-red">Оформить заказ</a>
-                    <button type="button" aria-label="Продолжить покупки" class="checkout-button button-red">
-                        Продолжить покупки
-                    </button>
-                </div>
+                </div>               
+                <a href="#" class="checkout-button button-red">Оформить заказ</a>
+                <button type="button" aria-label="Продолжить покупки" class="checkout-button button-red">
+                    Продолжить покупки
+                </button>          
             </div>
         </section>
         
@@ -306,18 +289,16 @@
             <div class="footer-nav">
                 <a href="#" aria-label="На главную" class="logo">
                     Техномарт
-                </a>
-                <div>
-                    <nav>
-                        <ul class="footer-navigation">
-                            <li><a href="#" class="footer-unit">Компания</a></li>
-                            <li><a href="#" class="footer-unit">Новости</a></li>
-                            <li><a href="#" class="footer-unit">Каталог</a></li>
-                            <li><a href="#" class="footer-unit">Доставка</a></li>
-                            <li><a href="#" class="footer-unit">Контакты</a></li>
-                        </ul>
-                    </nav>
-                </div>
+                </a>              
+                <nav>
+                    <ul class="footer-navigation list">
+                        <li><a href="#" class="footer-unit">Компания</a></li>
+                        <li><a href="#" class="footer-unit">Новости</a></li>
+                        <li><a href="#" class="footer-unit">Каталог</a></li>
+                        <li><a href="#" class="footer-unit">Доставка</a></li>
+                        <li><a href="#" class="footer-unit">Контакты</a></li>
+                    </ul>
+                </nav>            
             </div>
             <div class="footer-info">
                 <div>
@@ -325,17 +306,15 @@
                     <a href="tel:+7(812)555-05-55" aria-label="Номер телефона" class="footer-phone-number">
                         +7 (812) 555-05-55
                     </a>
-                </div>
-                <div>
-                    <nav>
-                        <ul class="footer-navigation">
-                            <li><a href="#" class="footer-element">Материалы</a></li>
-                            <li><a href="#" class="footer-element">Техника</a></li>
-                            <li><a href="#" class="footer-element">Инструмент</a></li>
-                            <li><a href="#" class="footer-element">Спецпредложения</a></li>
-                        </ul>
-                    </nav>
-                </div>
+                </div>               
+                <nav>
+                    <ul class="footer-navigation list">
+                        <li><a href="#" class="footer-element">Материалы</a></li>
+                        <li><a href="#" class="footer-element">Техника</a></li>
+                        <li><a href="#" class="footer-element">Инструмент</a></li>
+                        <li><a href="#" class="footer-element">Спецпредложения</a></li>
+                    </ul>
+                </nav>              
             </div>
         </div>
         <div class="footer-bottom">

@@ -7,7 +7,7 @@ body{
     padding: 0;
 }
 
-ul{
+.list{
     list-style-type: none;
 }
 
@@ -135,7 +135,7 @@ header{
     border-bottom: 5px solid #b52933;
 
     width: 200px;
-    line-height:63px;
+    line-height:24px;
 }
 
 .logo:hover{
@@ -257,7 +257,6 @@ header{
     display: flex;
 
     width: 121px;
-    height: 45px;
 }
 
 .sign-in-button:hover{
@@ -276,7 +275,7 @@ header{
     background-color: #ffffff;
 
     width: 150px;
-    height: 45px;
+
 }
 
 .registration-text:hover{
@@ -313,7 +312,7 @@ header{
 }
 
 .container{
-    width: 960px;
+    width: 940px;
 
     margin: 0 auto;
     padding-left: 10px;
@@ -354,7 +353,7 @@ header{
 
 .popular-button{
     width: 253px;
-    height: 38px;
+    line-height: 18px;
 }
 
 .popular-products{
