@@ -7,9 +7,6 @@ body{
     padding: 0;
 }
 
-.list{
-    list-style-type: none;
-}
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -151,6 +148,10 @@ header{
 }
 
 .navigation-list{
+    list-style: none;
+
+    padding: 0;
+
     display: flex;
     justify-content: space-around;
 }
@@ -167,7 +168,9 @@ header{
     display: flex;
 }
 
-.catalog-links{
+.catalog-link-list{
+    list-style: none;
+
     display: flex;
 }
 
@@ -210,6 +213,10 @@ header{
 }
 
 .account-links{
+    list-style: none;
+
+    padding: 0;
+
     display: flex;
 }
 
@@ -495,6 +502,12 @@ header{
     line-height: 24px;
 }
 
+.service-button-list{
+    list-style: none;
+
+    padding: 0;
+}
+
 .service-button{
     font-family: 'Cuprum', 'Arial', sans-serif;
     font-weight: 700;
@@ -531,6 +544,12 @@ header{
     line-height: 24px;
 }
 
+.about-us-company-list{
+    list-style: none;
+
+    padding: 0;
+}
+
 .about-us-company{
     font-size: 18px;
 }
@@ -556,6 +575,12 @@ header{
 
 .checkout-inscription{
     font-size: 30px;
+}
+
+.catalog-link-list{
+    padding: 0;
+
+    list-style: none;
 }
 
 .catalog-link{
@@ -584,6 +609,12 @@ header{
     font-weight: 400;
 }
 
+.filter-option-list{
+    padding: 0;
+    
+    list-style: none;
+}
+
 .filter-option{
     font-family: 'PT Sans', 'Arial', sans-serif;
     font-weight: 400;
@@ -606,6 +637,10 @@ header{
 }
 
 .sorting-list{
+    list-style: none;
+
+    padding: 0;
+
     display: flex;
 }
 
@@ -674,6 +709,9 @@ header{
     font-family: 'PT Sans', 'Arial', sans-serif;
     font-weight: 400;
     font-size: 13px;
+    list-style: none;
+
+    padding: 0;
 
     display: flex;
 }
@@ -711,8 +749,34 @@ header{
     line-height: 24px;
 }
 
+.footer-logo{
+    font-size: 30px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    background-color: #ee3643;
+    border-bottom: 5px solid #b52933;
+
+    width: 200px;
+    line-height:30px;
+}
+
+.footer-logo:hover{
+    background-color: #ca2c37;
+}
+
+.footer-logo:active{
+    background-color: #ba2732;
+}
+
 .footer-navigation{
+    list-style: none;
+
     display: flex;
+
+    padding: 0;
+
 }
 
 .footer-nav{
