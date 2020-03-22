@@ -7,8 +7,22 @@ body{
     padding: 0;
 }
 
-.visually-hidden{
-    /* visibility: hidden; */
+ul{
+    list-style-type: none;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .header-headline{
@@ -121,7 +135,7 @@ header{
     border-bottom: 5px solid #b52933;
 
     width: 200px;
-    height: 63px;
+    line-height:63px;
 }
 
 .logo:hover{
@@ -298,10 +312,12 @@ header{
     background-color: #ffc047;
 }
 
-.content{
+.container{
+    width: 960px;
+
     margin: 0 auto;
-    
-    width: 940px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .main-top-blocks{
@@ -309,7 +325,7 @@ header{
     justify-content: space-between;
 }
 
-.main-bot-blocks{
+.main-bottom-blocks{
     display: flex;
     justify-content: space-between;
     
@@ -350,6 +366,13 @@ header{
     font-size: 30px;
     color: #32425c;
     text-transform: uppercase;
+}
+
+.popular-producer{
+    background-color: #f9f5f0;
+
+    display: flex;
+    justify-content: space-between;
 }
 
 .popular-producer-top{
