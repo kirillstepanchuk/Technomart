@@ -1,4 +1,4 @@
-body{
+body {
     font-family: 'Cuprum', 'Arial', sans-serif;
     font-weight: 400;
     font-size: 17px;
@@ -22,108 +22,136 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-.header-headline{
+.container {
+    width: 940px;
+
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.button-red {          
+    font-size: 14px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    background-color: #ee3643;
+}
+
+.button-red:hover {
+    background-color: #ca2c37;
+}
+
+.button-red:active {
+    background-color: #ba2732;
+}
+
+/* header */
+
+.header-headline {
     font-family: 'Cuprum', 'Arial', sans-serif;
     font-weight: 400;
     font-style: italic;
     font-size: 16px;
-    color: #ee3643;
     line-height: 23px;
+    color: #ee3643;
 
     margin-left: 52px;
 }
 
-.header-bookmarks{
+.header-bookmarks {
     color: #ffffff;
     text-decoration: none;
 }
 
-.header-bookmarks:active{
+.header-bookmarks:active {
     color: #999ca1;
 
     background-color: #161d29;
 }
 
-.header-basket{
+.header-basket {
     color: #ffffff;
     text-decoration: none;
 }
 
-.header-basket:active{
+.header-basket:active {
     color: #999ca1;
 
     background-color: #161d29;
 }
 
-.header-checkout{
+.header-checkout {
     color: #ffffff;
     text-decoration: none;
 
     background-color: #63a63e;
 }
 
-.header-checkout:hover{
+.header-checkout:hover {
     background-color: #5fbb2d;
 }
 
-.header-checkout:active{
+.header-checkout:active {
     color: #999ca1;
 
     background-color: #518534;
 }
 
-.header-unit{
+.header-unit {
     color: #ffffff;
     text-decoration: none;
     list-style-type: none;
 }
 
-.header-unit:hover{
+.header-unit:hover {
     background-color: #293449;
 }
 
-.header-unit:active{
+.header-unit:active {
     color: #999ca1;
 
     background-color: #293449;
 }
 
-header{
+header {
     background-color: #f3f7f9;
 }
 
 
-.header-top{
+.header-top {
     background-color: #293449;
 
     margin-bottom: 42px;
 }
 
-.header-top-content{
+.header-top-content {
     margin: 0 auto;
+
+    width: 940px;
 
     display: flex;
     justify-content: space-between;
-
-    width: 940px;
 }
 
-.header-top-content-left{
+.header-top-content-left {
     display: flex;
 }
 
-.header-mid-content{
+.header-mid-content {
     display: flex;
     justify-content: space-around;
 }
 
-.header-contact{
+.header-contact {
     margin-left: 70px;
     margin-right: 50px;
 }
 
-.logo{
+.logo {
     font-size: 24px;
+    line-height:24px;
     color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
@@ -132,22 +160,21 @@ header{
     border-bottom: 5px solid #b52933;
 
     width: 200px;
-    line-height:24px;
 }
 
-.logo:hover{
+.logo:hover {
     background-color: #ca2c37;
 }
 
-.logo:active{
+.logo:active {
     background-color: #ba2732;
 }
 
-.navigaiton{
+.navigaiton {
     background-color: #32425c;
 }
 
-.navigation-list{
+.navigation-list {
     list-style: none;
 
     padding: 0;
@@ -156,7 +183,7 @@ header{
     justify-content: space-around;
 }
 
-.phone-number{
+.phone-number {
     font-size: 21px;
     color: #ee3643;
     text-decoration: none;
@@ -164,55 +191,22 @@ header{
     border:3px solid #ffffff
 }
 
-.catalog-main-content{
-    display: flex;
-}
-
-.catalog-link-list{
-    list-style: none;
-
-    display: flex;
-}
-
-.catalog-link{
-    font-size: 13px;
-    color: #000000;
-    text-decoration: none;
-
-    margin-right: 45px;
-}
-
-.catalog-headline{
-    background-color: #f2f6f8;
-}
-
-.catalog-headline-text{
-    font-size: 30px;
-    color: #32425c;
-    text-transform: uppercase;
-}
-
-.catalog-title{
-    font-size: 13px;
-    text-transform: uppercase;
-}
-
-.adress{
+.adress {
     font-size: 14px;
     color: #32425c;
 }
 
-.account-name{
+.account-name {
     font-size: 21px;
     color: #000000;
     text-decoration: none;
 }
 
-.account-name:active{
+.account-name:active {
     color: #b7bfc8;
 }
 
-.account-links{
+.account-links {
     list-style: none;
 
     padding: 0;
@@ -220,61 +214,48 @@ header{
     display: flex;
 }
 
-.account-link{
+.account-link {
     margin-right: 20px;
 }
 
-.header-account-buttons{
+.header-account-buttons {
     display: flex;
     justify-content: flex-end;
 }
 
-.my-orders{
+.user-account {
     font-size: 16px;
     color: #32425c;
 }
 
-.my-orders:hover{
+.user-account:hover {
     color: #ee3643;
 }
 
-.my-orders:active{
+.user-account:active {
     color: #b7bfc8;
 }
 
-.user-account{
-    font-size: 16px;
-    color: #32425c;
-}
-
-.user-account:hover{
-    color: #ee3643;
-}
-
-.user-account:active{
-    color: #b7bfc8;
-}
-
-.sign-in-button{
+.sign-in-button {
     font-size: 21px;
     color: #000000;
 
     background-color: #ffffff;
-    
-    display: flex;
 
     width: 121px;
+    
+    display: flex;
 }
 
-.sign-in-button:hover{
+.sign-in-button:hover {
     color: #ee3643;
 }
 
-.sign-in-button:active{
+.sign-in-button:active {
     color: #b2b2b2;
 }
 
-.registration-text{
+.registration-text {
     font-size: 21px;
     color: #000000;
     text-decoration: none;
@@ -285,129 +266,283 @@ header{
 
 }
 
-.registration-text:hover{
+.registration-text:hover {
     color: #ee3643;
 }
 
-.registration-text:active{
+.registration-text:active {
     color: #b2b2b2;
 }
 
-.block-material{
-    background-color: #ffbf47;
+.my-orders {
+    font-size: 16px;
+    color: #32425c;
 }
 
-.block-tool{
-    background-color: #3bbce3;
+.my-orders:hover {
+    color: #ee3643;
 }
 
-.main-block{
-    width: 300px;
-    height: 125px;
+.my-orders:active {
+    color: #b7bfc8;
 }
 
-.block-equipment{
-    background-color: #dc91d8;
-}
+/* catalog -----------------------------------------*/
 
-.block-discount{
-    background-color: #8ed78f;
-}
-
-.block-delivery{
-    background-color: #ffc047;
-}
-
-.container{
-    width: 940px;
-
-    margin: 0 auto;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.main-top-blocks{
+.catalog-main-content {
     display: flex;
-    justify-content: space-between;
 }
 
-.main-bottom-blocks{
-    display: flex;
-    justify-content: space-between;
-    
-}
-
-.main-slider-block{
-    width: 620px;
-    height: 266px;
-}
-
-.block-drill{
-    background: #a37869 url('../img/slider-2.jpg') no-repeat;
-}
-
-.block-hammer-drill{
-    background: #9d8c76 url('../img/slider-1.jpg') no-repeat;
-
-}
-
-.popular-product{
-    background-color: #f9f5f0;
+.catalog-link-list {
+    list-style: none;
 
     display: flex;
-    justify-content: space-between;
 }
 
-.popular-button{
-    width: 253px;
-    line-height: 18px;
+.catalog-link {
+    font-size: 13px;
+    color: #000000;
+    text-decoration: none;
+
+    margin-right: 45px;
 }
 
-.popular-products{
-    display: flex;
-    justify-content: space-between;
+.catalog-headline {
+    background-color: #f2f6f8;
 }
 
-.popular-headline{
+.catalog-headline-text {
     font-size: 30px;
     color: #32425c;
     text-transform: uppercase;
 }
 
-.popular-producer{
-    background-color: #f9f5f0;
+.catalog-title {
+    font-size: 13px;
+    text-transform: uppercase;
+}
 
+.product-name {
+    font-family: 'PT Sans', 'Arial', sans-serif;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.product-row {
     display: flex;
     justify-content: space-between;
 }
 
-.popular-producer-top{
+.product-name span {
+    text-transform: uppercase;
+}
+
+.product-old-price {
+    font-family: 'PT Sans', 'Arial', sans-serif;
+    font-weight: 700;
+    color: #a9a9a9;
+}
+
+.product-price {
+    font-family: 'PT Sans', 'Arial', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+
+    background-color: #ee3643;
+}
+
+.catalog-link {
+    font-family: 'PT Sans', 'Arial', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.filter {
+    background-color: #f2f6f8;
+}
+
+.filter-title {
+    font-family: 'PT Sans', 'Arial', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+.range {
+    background-color: #f2f6f8;
+}
+
+.range-input {
+    font-family: 'PT Sans', 'Arial', sans-serif;
+    font-weight: 400;
+}
+
+.filter-option-list {
+    list-style: none;
+
+    padding: 0;
+}
+
+.filter-option {
+    font-family: 'PT Sans', 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.filter-button {
+    font-family: 'PT Sans', 'Arial', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.sorting {
+    font-family: 'PT Sans', 'Arial', sans-serif;
+    font-weight: 400;
+    background-color: #f2f6f8;
+    
     display: flex;
-    justify-content: space-between;
 }
 
-.popular-producer-bot{
+.sorting-list {
+    list-style: none;
+
+    padding: 0;
+
     display: flex;
-    justify-content: space-between;
 }
 
-.service{
-    background-color: #f5f8f7;
+.sorting-unit {
+    font-size: 13px;
+    color: #b2b2b2;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    border-bottom: 1px dotted #ee3643;
 }
 
-.servise-use{
+.sorting-unit:hover {
+    color: #000000;
+
+    border-bottom: 1px solid #ee3643;
+}
+
+.sorting-unit:active {
+    color: #ee3643;
+
+    border: none;
+}
+
+.catalog-link-list {
+    padding: 0;
+
+    list-style: none;
+}
+
+.buy-button {
+    font-size: 14px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    background-color: #63a63e;
+}
+
+.buy-button:hover {
+    color: #ffffff;
+
+    background-color: #5fbb2d;
+}
+
+.buy-button:active {
+    background-color: #518534;
+}
+
+.to-bookmarks-button {
+    font-size: 14px;
+    color: #32425c;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    border: 3px solid #63a63e;
+}
+
+.to-bookmarks-button:hover {
+    color: #32425c;
+
+    border: 3px solid #32425c;
+}
+
+.to-bookmarks-button:active {
+    color: #c1c6ce;
+
+    border: 3px solid #c1c6ce;
+}
+
+.page {
+    font-family: 'PT Sans', 'Arial', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    list-style: none;
+
+    padding: 0;
+
     display: flex;
-    justify-content: space-between;
 }
 
-.block-title{
+.page-number {
+    color: black;
+    text-transform: uppercase;
+
+    margin-right: 40px;
+
+    border: 2px solid #e5e5e5;
+}
+
+.page-number:hover {
+    border: 2px solid #bdc6ca;
+}
+
+.page-number:active {
+    border: 2px solid #ee3643;
+}
+
+/* blocks ---------------------------------------------*/
+
+.block-material {
+    background-color: #ffbf47;
+}
+
+.block-tool {
+    background-color: #3bbce3;
+}
+
+.main-block {
+    width: 300px;
+    height: 125px;
+}
+
+.block-equipment {
+    background-color: #dc91d8;
+}
+
+.block-discount {
+    background-color: #8ed78f;
+}
+
+.block-delivery {
+    background-color: #ffc047;
+}
+
+.block-title {
     font-family: 'Cuprum', 'Arial', sans-serif;
     font-weight: 700;
     font-size: 24px;
     color: #ffffff;
 }
 
-.block-text{
+.block-text {
     font-size: 14px;
     color: #ffffff;
     text-decoration: none;
@@ -417,98 +552,130 @@ header{
     
 }
 
-.block-text:hover{
+.block-text:hover {
     background-color: #cccccc;
 }
 
-.block-text:active{
+.block-text:active {
     background-color: #b2b2b2;
 }
 
-.button-red{          
-    font-size: 14px;
-    color: #ffffff;
-    text-decoration: none;
-    text-transform: uppercase;
-
-    background-color: #ee3643;
+.main-top-blocks {
+    display: flex;
+    justify-content: space-between;
 }
 
-.button-red:hover{
-    background-color: #ca2c37;
+.main-bottom-blocks {
+    display: flex;
+    justify-content: space-between;
+    
 }
 
-.button-red:active{
-    background-color: #ba2732;
+.main-slider-block {
+    width: 620px;
+    height: 266px;
 }
 
-.slider-block-title{
+.block-drill {
+    background: #a37869 url('../img/slider-2.jpg') no-repeat;
+}
+
+.block-hammer-drill {
+    background: #9d8c76 url('../img/slider-1.jpg') no-repeat;
+
+}
+
+.slider-block-title {
     font-size: 36px;
     color: #ffffff;
     text-transform: uppercase;
 }
 
-.slider-block-inscription{
+.slider-block-inscription {
     font-size: 18px;
     color: #ffffff;
 }
 
-.product-name{
-    font-family: 'PT Sans', 'Arial', sans-serif;
-    font-weight: 700;
-    line-height: 20px;
-}
+/* popular---------------------------------------------- */
 
-.product-row{
+.popular-product {
+    background-color: #f9f5f0;
+
     display: flex;
     justify-content: space-between;
 }
 
-.product-name span{
+.popular-button {
+    line-height: 18px;
+
+    width: 253px;
+}
+
+.popular-products {
+    display: flex;
+    justify-content: space-between;
+}
+
+.popular-headline {
+    font-size: 30px;
+    color: #32425c;
     text-transform: uppercase;
 }
 
-.product-old-price{
-    font-family: 'PT Sans', 'Arial', sans-serif;
-    font-weight: 700;
-    color: #a9a9a9;
+.popular-producer {
+    background-color: #f9f5f0;
+
+    display: flex;
+    justify-content: space-between;
 }
 
-.product-price{
-    font-family: 'PT Sans', 'Arial', sans-serif;
-    font-weight: 700;
-    color: #ffffff;
-    text-decoration: none;
-
-    background-color: #ee3643;
+.popular-producer-top {
+    display: flex;
+    justify-content: space-between;
 }
 
-.service-headline{
+.popular-producer-bot {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* sevice----------------------------------------------- */
+
+.service {
+    background-color: #f5f8f7;
+}
+
+.servise-use {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-headline {
     font-size: 30px;
     text-transform: uppercase;
 }
 
-.service-inscription{
+.service-inscription {
     font-family: 'PT Sans', 'Arial', sans-serif;
     font-weight: 400;
     font-size: 13px;
     line-height: 24px;
 }
 
-.service-text{
+.service-text {
     font-family: 'PT Sans', 'Arial', sans-serif;
     font-weight: 400;
     font-size: 13px;
     line-height: 24px;
 }
 
-.service-button-list{
+.service-button-list {
     list-style: none;
 
     padding: 0;
 }
 
-.service-button{
+.service-button {
     font-family: 'Cuprum', 'Arial', sans-serif;
     font-weight: 700;
     font-size: 21px;
@@ -517,325 +684,164 @@ header{
     background-color: #32425c;
 }
 
-.service-button:hover{
+.service-button:hover {
     background-color: #293449;
 }
 
-.service-title{
+.service-title {
     font-size: 36px;
     color: #32425c;
     text-transform: uppercase;
 }
 
-.about-us-content{
+/* about us--------------------------------------------- */
+
+.about-us-content {
     display: flex;
     justify-content: space-between;
 }
 
-.about-us-title{
+.about-us-title {
     font-size: 30px;
     text-transform: uppercase;
 }
 
-.about-us-inscription{
+.about-us-inscription {
     font-family: 'PT Sans', 'Arial', sans-serif;
     font-weight: 400;
     font-size: 13px;
     line-height: 24px;
 }
 
-.about-us-company-list{
+.about-us-company-list {
     list-style: none;
 
     padding: 0;
 }
 
-.about-us-company{
+.about-us-company {
     font-size: 18px;
 }
 
-.feedback-content{
-    width: 460px;
+/* feedback--------------------------------------------- */
+
+.feedback-content {
     margin:0 auto;
+
+    width: 460px;
 }
 
-.feedback-top{
+.feedback-top {
     display: flex;
     justify-content: space-between;
 }
 
-.feedback-title{
+.feedback-title {
     font-size: 18px;
 }
 
-.checkout-content{
-    width: 460px;
+/* checkout--------------------------------------------- */
+
+.checkout-content {
     margin: 0 auto;
+
+    width: 460px;
 }
 
-.checkout-inscription{
+.checkout-inscription {
     font-size: 30px;
 }
 
-.catalog-link-list{
-    padding: 0;
+/* about drill------------------------------------------ */
 
-    list-style: none;
-}
-
-.catalog-link{
-    font-family: 'PT Sans', 'Arial', sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
-}
-
-.filter{
+.about-drill {
     background-color: #f2f6f8;
 }
 
-.filter-title{
-    font-family: 'PT Sans', 'Arial', sans-serif;
-    font-weight: 700;
-    font-size: 17px;
-    text-transform: uppercase;
-}
-
-.range{
-    background-color: #f2f6f8;
-}
-
-.range-input{
-    font-family: 'PT Sans', 'Arial', sans-serif;
-    font-weight: 400;
-}
-
-.filter-option-list{
-    padding: 0;
-    
-    list-style: none;
-}
-
-.filter-option{
-    font-family: 'PT Sans', 'Arial', sans-serif;
-    font-weight: 400;
-    font-size: 15px;
-    text-transform: uppercase;
-}
-
-.filter-button{
-    font-family: 'PT Sans', 'Arial', sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
-}
-
-.sorting{
-    font-family: 'PT Sans', 'Arial', sans-serif;
-    font-weight: 400;
-    background-color: #f2f6f8;
-    
-    display: flex;
-}
-
-.sorting-list{
-    list-style: none;
-
-    padding: 0;
-
-    display: flex;
-}
-
-.sorting-unit{
-    font-size: 13px;
-    color: #b2b2b2;
-    text-decoration: none;
-    text-transform: uppercase;
-
-    border-bottom: 1px dotted #ee3643;
-}
-
-.sorting-unit:hover{
-    color: #000000;
-
-    border-bottom: 1px solid #ee3643;
-}
-
-.sorting-unit:active{
-    color: #ee3643;
-
-    border: none;
-}
-
-.buy-button{
-    font-size: 14px;
-    color: #ffffff;
-    text-decoration: none;
-    text-transform: uppercase;
-
-    background-color: #63a63e;
-}
-
-.buy-button:hover{
-    color: #ffffff;
-
-    background-color: #5fbb2d;
-}
-
-.buy-button:active{
-    background-color: #518534;
-}
-
-.to-bookmarks-button{
-    font-size: 14px;
-    color: #32425c;
-    text-decoration: none;
-    text-transform: uppercase;
-
-    border: 3px solid #63a63e;
-}
-
-.to-bookmarks-button:hover{
-    color: #32425c;
-
-    border: 3px solid #32425c;
-}
-
-.to-bookmarks-button:active{
-    color: #c1c6ce;
-
-    border: 3px solid #c1c6ce;
-}
-
-.page{
-    font-family: 'PT Sans', 'Arial', sans-serif;
-    font-weight: 400;
-    font-size: 13px;
-    list-style: none;
-
-    padding: 0;
-
-    display: flex;
-}
-
-.page-number{
-    color: black;
-    text-transform: uppercase;
-
-    border: 2px solid #e5e5e5;
-
-    margin-right: 40px;
-}
-
-.page-number:hover{
-    border: 2px solid #bdc6ca;
-}
-
-.page-number:active{
-    border: 2px solid #ee3643;
-}
-
-.about-drill{
-    background-color: #f2f6f8;
-}
-
-.about-drill-title{
+.about-drill-title {
     font-size: 30px;
     text-transform: uppercase;
 }
 
-.about-drill-inscription{
+.about-drill-inscription {
     font-family: 'PT Sans', 'Arial', sans-serif;
     font-weight: 400;
     font-size: 13px;
     line-height: 24px;
 }
 
-.footer-logo{
+/* footer----------------------------------------------- */
+
+.footer-logo {
     font-size: 30px;
-    color: #ffffff;
-    text-decoration: none;
-    text-transform: uppercase;
-
-    background-color: #ee3643;
-    border-bottom: 5px solid #b52933;
-
-    width: 200px;
     line-height:30px;
 }
 
-.footer-logo:hover{
-    background-color: #ca2c37;
-}
-
-.footer-logo:active{
-    background-color: #ba2732;
-}
-
-.footer-navigation{
+.footer-navigation {
     list-style: none;
-
-    display: flex;
 
     padding: 0;
 
+    display: flex;
 }
 
-.footer-nav{
+.footer-nav {
     display: flex;
     justify-content: space-between;
 }
 
-.footer-info{
+.footer-info {
     display: flex;
     justify-content: space-between;
 }
 
-.footer-unit{
+.footer-unit {
     font-size: 18px;
     color: #f3f7f9;
     text-decoration: none;
 }
 
-.footer-unit:hover{
+.footer-unit:hover {
     text-decoration: underline;
 }
 
-.footer-unit:active{
+.footer-unit:active {
     color: #929caa;
 }
 
-.footer-element{
+.footer-element {
     font-size: 18px;
     color: #ffd180;
     text-decoration: none;
 }
 
-.footer-element:hover{
+.footer-element:hover {
     text-decoration: underline;
 }
 
-.footer-element:active{
+.footer-element:active {
     color: #998a6e;
 }
 
-.footer-adress{
+.footer-adress {
     font-size: 18px;
-    color: #f3f7f9;
     line-height: 24px;
+    color: #f3f7f9;
 }
 
-.footer-phone-number{
+.footer-phone-number {
     font-size: 18px;
-    color: #f3f7f9;
     line-height: 24px;
+    color: #f3f7f9;
 }
 
-.footer-company{
+.footer-company {
     font-size: 16px;
-    color: #f3f7f9;
     line-height: 18px;
+    color: #f3f7f9;
 }
 
-.footer-link{
+.footer-link {
     font-size: 16px;
     color: #ffd180;
     text-decoration: none;
@@ -843,35 +849,35 @@ header{
     margin-right: 50px;
 }
 
-.footer-link:hover{
+.footer-link:hover {
     text-decoration: underline;
 }
 
-.footer-link:active{
+.footer-link:active {
     color: #ee3643;
     text-decoration: none;
 }
 
-.footer-text{
+.footer-text {
     font-size: 16px;
     color: #ffffff;
 }
 
-.footer{
+.footer {
     background-color: #32425c;
 }
 
-.footer-bottom{
+.footer-bottom {
     background-color: #293449;
 
 }
 
-.footer-bottom-content{
+.footer-bottom-content {
     display: flex;
     justify-content: space-between;
 }
 
-.footer-feedback{
+.footer-feedback {
     display: flex;
 }
 
