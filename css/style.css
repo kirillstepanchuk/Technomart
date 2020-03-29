@@ -681,7 +681,10 @@ header {
 .sorting {    
     background-color: #f2f6f8;
 
+    margin-left: 20px;
+
     display: flex;
+    justify-content: space-between;
 }
 
 .sorting-list {
@@ -695,6 +698,8 @@ header {
     color: #b2b2b2;
     text-decoration: none;
     text-transform: uppercase;
+
+    margin-left: 70px;
 
     border-bottom: 1px dotted #ee3643;
 }
