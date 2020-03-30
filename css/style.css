@@ -243,25 +243,12 @@ header {
     text-align: center;
 
     background-color: #ee3643;
+    box-shadow: 0 5px 0 #b52933;
 
     padding-top: 9px;
     padding-bottom: 9px;
 
     width: 220px;
-}
-
-.logo::after {
-    content: "";
-
-    position: absolute;
-
-    background-color: #9a212a;
-
-    width: 220px;
-    height: 5px;
-
-    top: 42px;
-    left: 0;
 }
 
 .logo:hover {
@@ -553,11 +540,15 @@ header {
     margin: 0;
 }
 
+.filter {
+    background-color: #f2f6f8;
+
+    margin-bottom: 20px;
+}
+
 .catalog-title {
     font-size: 18px;
     text-transform: uppercase;
-
-    background-color: #f2f6f8;
 
     padding-bottom: 9px;
     padding-left: 18px;
@@ -686,7 +677,7 @@ header {
 
     margin-left: 20px;
 
-    height: 38px;
+    
 
     display: flex;
     justify-content: space-between;
@@ -696,7 +687,9 @@ header {
     list-style: none;
 
     margin-top: 0;
+    margin-bottom: 0;
     padding-top: 9px;
+
     
     display: flex;
 }
@@ -1030,6 +1023,7 @@ header {
     transform: rotate(-45deg);
 
     outline: none;
+    cursor: pointer;
 }
 
 .button-next {
@@ -1047,6 +1041,7 @@ header {
     transform: rotate(-45deg);
 
     outline: none;
+    cursor: pointer;
 }
 
 .slider-bottom-content {
@@ -1062,25 +1057,41 @@ header {
     margin: 0;
 
     display: flex;
-
 }
 
 .slider-dod {
+    position: relative;
+
     background-color: #ffffff;
-    border: 2px solid #ffffff;
+    border: none;
     border-radius: 50%;
     
     margin-left: 10px;
+    padding: 0;
 
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
 }
 
-.slider-dod:focus {
+.slider-dod::before {
+    content: "";
+
+    position: absolute;
+
+    background-color: #ffffff;
+    border-radius: 50%;
+
+    width: 6px;
+    height: 6px;
+
+    top: 2px;
+    left: 2px;
+}
+
+.slider-dod::before:focus {
     background-color: #ee3643;
-
-    outline: none;
 }
+
 
 /* popular---------------------------------------------- */
 
@@ -1494,6 +1505,8 @@ header {
 
     right: 10px;
     top: 10px;
+
+    cursor: pointer;
 }
 
 .feedback-button {
@@ -1520,6 +1533,8 @@ header {
 
     right: 10px;
     top: 10px;
+
+    cursor: pointer;
 }
 
 .checkout-content {
@@ -1629,25 +1644,12 @@ header {
     text-align: center;
 
     background-color: #ee3643;
+    box-shadow: 0 5px 0 #b52933;
 
     padding-top: 16px;
     padding-bottom: 16px;
 
     width: 220px;
-}
-
-.footer-logo::after {
-    content: "";
-
-    position: absolute;
-
-    background-color: #9a212a;
-
-    width: 220px;
-    height: 5px;
-
-    top: 62px;
-    left: 0;
 }
 
 .footer-logo:hover {
@@ -1817,5 +1819,5 @@ header {
     top: 20px;
     right: 20px;
 
-    z-index: 1;
+    cursor: pointer;
 }
