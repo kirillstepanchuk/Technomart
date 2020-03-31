@@ -1051,47 +1051,63 @@ header {
     display: flex;
 }
 
-.slider-dods {
-    list-style: none;
-
+.pagination-bullet-list {
     margin: 0;
-
+    list-style: none;
     display: flex;
 }
 
-.slider-dod {
-    position: relative;
-
-    background-color: #ffffff;
-    border: none;
-    border-radius: 50%;
-    
-    margin-left: 10px;
-    padding: 0;
-
-    width: 10px;
-    height: 10px;
+.pagination-bullet-unit {
+    margin-left: 20px;
+    margin-top: 14px;
 }
 
-.slider-dod::before {
-    content: "";
-
+.pagination-bullet input {
     position: absolute;
+    z-index: -1;
+    
+    opacity: 0;
+}
 
-    background-color: #ffffff;
+.pagination-bullet-text {
+    position: relative;
+    
+	cursor: pointer;
+}
+
+.pagination-bullet-text:before {
+    content: "";
+    
+	position: absolute;
+	top: 0;
+    left: 0;
+
     border-radius: 50%;
+	background: #ffffff;
+    
+	width: 10px;
+	height: 10px;
+}
 
-    width: 6px;
-    height: 6px;
-
-    top: 2px;
+.pagination-bullet-text:after {
+    content: "";
+    
+	position: absolute;
     left: 2px;
+    top: 2px;
+    
+
+    border-radius: 50%;
+	background: red;
+	opacity: 0;
+    
+	width: 6px;
+    height: 6px;
 }
 
-.slider-dod::before:focus {
-    background-color: #ee3643;
+.pagination-bullet input:checked + .pagination-bullet-text:after {
+	opacity: 1;
 }
-
 
 /* popular---------------------------------------------- */
 
@@ -1821,3 +1837,7 @@ header {
 
     cursor: pointer;
 }
+
+
+
+
