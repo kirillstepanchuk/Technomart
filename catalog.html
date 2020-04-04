@@ -19,8 +19,8 @@
                         <a href="#" aria-label="На главную" class="logo">
                             Техномарт
                         </a>
-                        <form action="https://echo.htmlacademy.ru" method="GET">
-                            <input type="search" name="search" id="search" aria-label="Поиск по сайту" placeholder="Поиск:">
+                        <form class="header-form" action="https://echo.htmlacademy.ru" method="GET">
+                            <input class="header-search" type="search" name="search" id="search" aria-label="Поиск по сайту" placeholder="Поиск:">
                         </form>
                     </div>  
                     <div>
@@ -51,9 +51,12 @@
                         Равшан Джамшутович
                     </a>
                     <a href="#" aria-label="Выход из аккаунта">
-                    <span class="visually-hidden">Выход из аккаунта</span>                   
+                        <span class="visually-hidden">Выход из аккаунта</span>
+                    </a>                 
                     <ul class="account-links">
-                        <li class="account-link"><a href="#" class="my-orders">Мои заказы</a></li>
+                        <li class="account-link">
+                            <a href="#" class="my-orders">Мои заказы</a>
+                        </li>
                         <li><a href="#" class="user-account">Личный кабинет</a></li>
                     </ul>
                 </div>
@@ -98,7 +101,7 @@
                 <h2 class="catalog-headline-text">Перфораторы</h2>
             </div>
             <div class="catalog-main-content">
-                <div>                   
+                <div class="catalog-left-main-content">                   
                     <div class="filter">
                         <h2 class="catalog-title">Фильтр:</h2>
                     </div>
@@ -116,28 +119,53 @@
                                 <label for="price-min" class="vissually-hidden">
                                     <span class="visually-hidden">Минимальная цена</span>
                                 </label>
-                                <input type="text" id="price-min">
+                                <input class="price-input" type="text" id="price-min">
                                 <span>-</span>
                                 <label for="price-max" class="vissually-hidden">
                                     <span class="visually-hidden">Максимальная цена</span>
                                 </label>
-                                <input type="text" id="price-max">
+                                <input class="price-input" type="text" id="price-max">
                             </div>
                         </fieldset>    
                         <div class="filter-producer">                              
                             <fieldset  class="filter-border">
                                 <legend class="filter-title">Производители:</legend>
                                 <ul class="filter-option-list">
-                                    <li class="filter-option"><input type="checkbox" name="bosch" id="filter-bosch">
-                                        <label for="filter-bosch">Bosch</label></li>
-                                    <li class="filter-option"><input type="checkbox" name="interskol" id="filter-interskol">
-                                        <label for="filter-interskol">Интерскол</label></li>
-                                    <li class="filter-option"><input type="checkbox" name="makita" id="filter-makita">
-                                        <label for="filter-makita">Makita</label></li>
-                                    <li  class="filter-option"><input type="checkbox" name="dewalt" id="filter-dewalt">
-                                        <label for="filter-dewalt">DeWalt</label></li>
-                                    <li class="filter-option"><input type="checkbox" name="hitachi" id="filter-hitachi">
-                                        <label for="filter-hitachi">Hitachi</label></li>
+                                    <li class="filter-option">
+                                        <label class="filter-option-checkbox-unit" for="filter-bosch">
+                                            <input class="visually-hidden" type="checkbox" name="bosch" id="filter-bosch">
+                                            <span class="checkbox-indicator"></span>
+                                            Bosch
+                                        </label>
+                                    </li>
+                                    <li class="filter-option">
+                                        <label class="filter-option-checkbox-unit" for="filter-interskol">
+                                            <input class="visually-hidden" type="checkbox" name="interskol" id="filter-interskol">
+                                            <span class="checkbox-indicator"></span>
+                                            Интерскол
+                                        </label>
+                                    </li>
+                                    <li class="filter-option">
+                                        <label class="filter-option-checkbox-unit" for="filter-makita">
+                                            <input class="visually-hidden" type="checkbox" name="makita" id="filter-makita">
+                                            <span class="checkbox-indicator"></span>
+                                            Makita
+                                        </label>
+                                    </li>
+                                    <li  class="filter-option">
+                                        <label class="filter-option-checkbox-unit" for="filter-dewalt">
+                                            <input class="visually-hidden" type="checkbox" name="dewalt" id="filter-dewalt">
+                                            <span class="checkbox-indicator"></span>
+                                            DeWalt
+                                        </label>
+                                    </li>
+                                    <li class="filter-option">
+                                        <label class="filter-option-checkbox-unit" for="filter-hitachi">
+                                            <input class="visually-hidden" type="checkbox" name="hitachi" id="filter-hitachi">
+                                            <span class="checkbox-indicator"></span>
+                                            Hitachi
+                                        </label>
+                                    </li>
                                 </ul>
                             </fieldset>
                         </div>     
@@ -145,10 +173,20 @@
                             <fieldset class="filter-border">
                                 <legend class="filter-title">Питание:</legend>
                                 <ul class="filter-option-list">
-                                    <li class="filter-option"><input type="radio" name="charge" id="filter-battery"> 
-                                        <label for="filter-battery">Аккумуляторные</label></li>
-                                    <li class="filter-option"><input type="radio" name="charge" id="filter-network">
-                                        <label for="filter-network">Сетевые</label></li>
+                                    <li class="filter-option">
+                                        <label class="filter-option-radio-unit" for="filter-battery">
+                                            <input class="visually-hidden" type="radio" name="charge" id="filter-battery"> 
+                                            <span class="radio-indicator"></span>
+                                            Аккумуляторные
+                                        </label>
+                                    </li>
+                                    <li class="filter-option">
+                                        <label class="filter-option-radio-unit" for="filter-network">
+                                            <input class="visually-hidden" type="radio" name="charge" id="filter-network">
+                                            <span class="radio-indicator"></span>
+                                            Сетевые
+                                        </label>
+                                    </li>
                                 </ul>
                             </fieldset>    
                         </div>                 
@@ -157,7 +195,7 @@
                 </div>
                 <div>
                     <div class="sorting">
-                        <h2 class="catalog-title">Сортировка:</h2>
+                        <h2 class="catalog-title sorting-title">Сортировка:</h2>
                         <ul class="sorting-list">
                             <li><a href="#" class="sorting-unit">По цене</a></li>
                             <li><a href="#" class="sorting-unit">По типу</a></li>
@@ -165,13 +203,13 @@
                         </ul>
                         <ul class="sorting-list">
                             <li>
-                                <a href="#" class="sorting-unit">
-                                    <span class="visually-hidden">По возрастанию</span>
+                                <a href="#" class="sorting-unit visually-hidden">
+                                    <span>По возрастанию</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="sorting-unit">
-                                    <span class="visually-hidden">По убыванию</span>
+                                <a href="#" class="sorting-unit visually-hidden">
+                                    <span>По убыванию</span>
                                 </a>
                             </li>
                         </ul>
