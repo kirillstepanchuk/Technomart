@@ -780,7 +780,7 @@ header {
     padding-top: 10px;
     padding-bottom: 10px;
 
-    width: 95px;
+    width: 105px;
 
     box-sizing: border-box;
 }
@@ -1345,7 +1345,7 @@ header {
     border: 1px solid #eaeaea;
 
     padding-bottom: 20px;
-    padding-top: 43px;
+    /* padding-top: 45px; */
     padding-left: 30px;
     padding-right: 30px;
     margin-bottom: 10px;
@@ -1375,6 +1375,8 @@ header {
 
     width: 60px;
     height: 59px;
+
+    z-index: 1;
 }
 
 .popular-product {
@@ -1416,18 +1418,33 @@ header {
 }
 
 .popular-products-buttons {
+    margin-top: 45px;
+    margin-bottom: 68px;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
+.popular-product-block {
+    position: relative;
+}
+
 .popular-image {
+    position: absolute;
+    top: 1px;
+    left: 0;
+
     height: 180px;
 
     display: flex;
     justify-content: center;
     align-items: center;
 } 
+
+.popular-product-block:hover .popular-image {
+    display: none;
+}
 
 .buy-button {
     position: relative;
