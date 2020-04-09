@@ -180,7 +180,8 @@ input[type="radio"].visually-hidden {
     padding-left: 50px;
     padding-top: 12px;
     padding-bottom: 12px;
-    padding-right: 70px;
+
+    width: 270px;
 }
 
 .header-search:hover {
