@@ -381,16 +381,24 @@ header {
     display: flex;
 }
 
-.account-content:active {
+.account-user-content:active {
     opacity: 0.3;
 }
 
-.account-content:hover path {
+.account-user-content:hover path {
     fill: #32425c;
 }
 
 .account-logout-button {
     padding-top: 4px;
+}
+
+.account-logout-button:active {
+    opacity: 0.3;
+}
+
+.account-logout-button:hover path {
+    fill: #32425c;
 }
 
 .account-name {
@@ -423,16 +431,16 @@ header {
     justify-content: flex-end;
 }
 
-.user-account {
+.account-link-unit {
     font-size: 16px;
     color: #32425c;
 }
 
-.user-account:hover {
+.account-link-unit:hover {
     color: #ee3643;
 }
 
-.user-account:active {
+.account-link-unit:active {
     color: #b7bfc8;
 }
 
@@ -484,19 +492,6 @@ header {
 
 .registration-text:active {
     color: #b2b2b2;
-}
-
-.my-orders {
-    font-size: 16px;
-    color: #32425c;
-}
-
-.my-orders:hover {
-    color: #ee3643;
-}
-
-.my-orders:active {
-    color: #b7bfc8;
 }
 
 /* catalog -----------------------------------------*/
@@ -624,21 +619,44 @@ header {
     font-weight: 700;
     color: #a9a9a9;
     text-align: center;
+    text-decoration: line-through;
+
+    margin-bottom: 23px;
+    
+    display: block;
 }
 
 .product-price {
+    position: relative;
+
     font-family: 'PT Sans', 'Arial', sans-serif;
+    line-height: 18px;
     font-weight: 700;
     color: #ffffff;
     text-decoration: none;
 
     background-color: #ee3643;
 
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 9px;
+    padding-bottom: 9px;
     padding-left: 40px;
-    padding-right: 43px;
-    margin-left: 42px;
+    padding-right: 24px;
+    margin-left: 12px;
+}
+
+.product-price::after {
+    content: ''; 
+
+    position: absolute;
+    right: -40px; 
+    top: 0;
+
+    border: 20px solid transparent;
+    border-left: 20px solid #ee3643;
+}
+
+.product-one-price {
+    margin-bottom: 60px;
 }
 
 .catalog-link {
@@ -679,10 +697,76 @@ header {
     background-color: #f7f3ec;
 }
 
+.range-block {
+    padding-top: 30px;
+    padding-bottom: 28px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.range-button {
+    position: relative;
+
+    background-color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    border-bottom: 2px solid #e0ddd8;
+
+    width: 20px;
+    height: 22px;
+}
+
+.range-button::after {
+    content: "";
+
+    position: absolute;
+    top: 8px;
+    left: 8px;
+
+    background-color: #ababab;
+    border-radius: 50%;
+
+    width: 4px;
+    height: 4px;
+}
+
+.range-min {
+    margin-right: 120px;
+}
+
+.range-bar {
+    position: relative;
+}
+
+.range-bar::before {
+    content: "";
+
+    position: absolute;
+    top: 10px;
+    left: 20px;
+
+    background-color: #00ca74;
+
+    width: 125px;
+    height: 2px;
+}
+
+.range-bar::after {
+    content: "";
+
+    position: absolute;
+    top: 10px;
+    left: 164px;
+
+    background-color: #d7dcde;
+
+    width: 20px;
+    height: 2px;
+}
+
 .range-input {
     font-family: 'PT Sans', 'Arial', sans-serif;
     font-weight: 400;
-    
 }
 
 .price-input {
@@ -1190,6 +1274,11 @@ header {
     display: flex;
 }
 
+.slider-hammer-drill-button {
+    margin-top: 125px;
+    margin-left: 25px;
+}
+
 .pagination-bullet-list {
     list-style: none;
 
@@ -1256,14 +1345,35 @@ header {
 
     padding-bottom: 20px;
     padding-top: 43px;
+    padding-left: 30px;
+    padding-right: 30px;
     margin-bottom: 10px;
     margin-top: 10px;
 
-    width: 218px;
+    width: 220px;
+
+    box-sizing: border-box;
 }
 
 .popular-product-block:hover {
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.product-block-new {
+    position: relative;
+}
+
+.product-block-new::before {
+    content: "";
+     
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    background-image: url(../img/new-flag.png);
+
+    width: 60px;
+    height: 59px;
 }
 
 .popular-product {
