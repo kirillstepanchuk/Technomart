@@ -618,6 +618,8 @@ header {
     text-decoration: line-through;
 
     margin-bottom: 23px;
+
+    min-height: 18px;
     
     display: block;
 }
@@ -650,10 +652,6 @@ header {
     border: 20px solid transparent;
     border-left: 20px solid #ee3643;
 }
-
-/* .product-one-price {
-    margin-bottom: 60px;
-} */
 
 .catalog-link {
     font-family: 'PT Sans', 'Arial', sans-serif;
@@ -1184,6 +1182,8 @@ header {
 }
 
 .main-slider-block {
+    position: absolute;
+
     margin-top: 20px;
 
     width: 620px;
@@ -1196,6 +1196,8 @@ header {
 
 .block-hammer-drill {
     background: #9d8c76 url('../img/slider-1.jpg') no-repeat;
+
+    z-index: -1;
 }
 
 .slider-block-title {
@@ -1242,6 +1244,8 @@ header {
 
 .slider-navigation-buttons {
     position: absolute;
+
+    z-index: 1;
 }
 
 .button-last {
@@ -1295,50 +1299,53 @@ header {
     margin-top: 14px;
 }
 
-.pagination-bullet input {
+.pagination-bullet-unit input {
     position: absolute;
-    z-index: -1;
-    
-    opacity: 0;
+    left: -9999px;
 }
 
-.pagination-bullet-text {
+.pagination-bullet-unit input:checked + label, 
+.pagination-bullet-unit input:not(:checked) + label {
     position: relative;
-    
+
+    display: inline-block;
     cursor: pointer;
 }
 
-.pagination-bullet-text:before {
+.pagination-bullet-unit input:checked + label:before, 
+.pagination-bullet-unit input:not(:checked) + label:before {
     content: "";
-    
-	position: absolute;
-	top: 0;
-    left: 0;
 
+    position: absolute;
+    left: 5px;
+    top: -15px;
+
+    background-color: #ffffff;
     border-radius: 50%;
-	background: #ffffff;
-    
-	width: 10px;
-	height: 10px;
+
+    width: 10px;
+    height: 10px;
 }
 
-.pagination-bullet-text:after {
+.pagination-bullet-unit input:checked + label:after, 
+.pagination-bullet-unit input:not(:checked) + label:after {
     content: "";
-    
-	position: absolute;
-    left: 2px;
-    top: 2px;
-    
+
+    position: absolute;
+    left: 7px;
+    top: -13px;
+
     border-radius: 50%;
-	background: red;
-	opacity: 0;
-    
-	width: 6px;
+    background-color: #ee3643;
+
+    width: 6px;
     height: 6px;
+
+    opacity: 0;
 }
 
-.pagination-bullet input:checked + .pagination-bullet-text:after {
-	opacity: 1;
+.pagination-bullet-unit input:checked + label:after {
+    opacity: 1;
 }
 
 /* popular---------------------------------------------- */
@@ -1573,8 +1580,7 @@ header {
 .service {
     background-color: #f5f8f7;
 
-    padding-bottom: 100px;
-    padding-top: 65px;
+    padding-top: 50px;
 }
 
 .servise-use {
@@ -1655,6 +1661,7 @@ header {
     position: relative;
 
     padding-left: 80px;
+    padding-bottom: 110px;
 }
 
 .service-block-delivery::after {
@@ -1675,6 +1682,8 @@ header {
 
     padding-bottom: 110px;
     padding-left: 80px;
+
+    display: none;
 }
 
 .service-block-guarantee::after {
@@ -1695,6 +1704,8 @@ header {
 
     padding-bottom: 110px;
     padding-left: 80px;
+
+    display: none;
 }
 
 .service-block-credit::after {
