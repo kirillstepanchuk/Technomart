@@ -173,7 +173,7 @@ input[type="radio"].visually-hidden {
     opacity: 0.5;
 }
 
-.header-search {
+.header-search input {
     border: none;
     background-color: #293449;
 
@@ -184,31 +184,31 @@ input[type="radio"].visually-hidden {
     width: 270px;
 }
 
-.header-search:hover {
+.header-search input:hover {
     background-color: #212a3a;
 }
 
-.header-search:focus:hover, .header-search:focus  {
+.header-search input:focus:hover, .header-search input:focus  {
     background-color: #ffffff;
 }
 
-.header-search:hover + .header-form-icon {
+.header-search input:hover + .header-search-icon {
     opacity: 1;
 }
 
-.header-search:focus + .header-form-icon path {
+.header-search input:focus + .header-search-icon path {
     fill: #ee3643;
 }
 
-.header-search:focus + .header-form-icon {
+.header-search input:focus + .header-search-icon {
     opacity: 1;
 }
 
-.header-form {
+.header-search {
     position: relative;
 }
 
-.header-form-icon {
+.header-search-icon {
     position: absolute;
     top: 12px;
     left: 17px;
@@ -371,6 +371,10 @@ header {
     margin-right: 14px;
 }
 
+.account-block {
+    display: none;
+}
+
 .account-content {
     background-color: #ffffff;
 
@@ -429,6 +433,8 @@ header {
 }
 
 .header-account-buttons {
+    margin-top: 10px;
+
     display: flex;
     justify-content: flex-end;
 }
@@ -514,6 +520,9 @@ header {
 }
 
 .catalog-link {
+    font-family: 'PT Sans', 'Arial', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
     font-size: 13px;
     color: #000000;
     text-decoration: none;
@@ -583,8 +592,12 @@ header {
     padding-bottom: 9px;
     padding-left: 18px;
     padding-top: 9px;
-    padding-right: 150px;
+   
     margin: 0;
+}
+
+.catalog-left-main-content {
+    min-width: 230px;
 }
 
 .product-name {
@@ -651,12 +664,6 @@ header {
 
     border: 20px solid transparent;
     border-left: 20px solid #ee3643;
-}
-
-.catalog-link {
-    font-family: 'PT Sans', 'Arial', sans-serif;
-    font-weight: 400;
-    text-transform: uppercase;
 }
 
 .range {
@@ -870,7 +877,7 @@ header {
 
     background-color: #ffffff;
     border: 1px solid #e5e5e5;
-    border-radius: 5%;
+    border-radius: 5px;
 
     padding-left: 38px;
     padding-right: 38px;
@@ -973,7 +980,7 @@ header {
     text-decoration: none;
 
     border: 2px solid #e5e5e5;
-    border-radius: 5%;
+    border-radius: 5px;
 
     margin-right: 40px;
     padding-bottom: 9px;
@@ -1003,7 +1010,7 @@ header {
     text-decoration: none;
 
     border: 2px solid #e5e5e5;
-    border-radius: 5%;
+    border-radius: 5px;
 
     margin-right: 40px;
     padding-bottom: 9px;
@@ -1154,7 +1161,7 @@ header {
     text-transform: uppercase;
 
     background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 5%;
+    border-radius: 5px;
 
     padding-left: 27px;
     padding-right: 27px;
@@ -1230,23 +1237,22 @@ header {
 }
 
 .slider-change-buttons{
+    position: absolute;
+
     margin-top: 140px;
     
     width: 620px;
 
     display: flex;
     justify-content: space-between;
+
+    z-index: 1;
 }
 
 .slider {
     position: relative;
 }
 
-.slider-navigation-buttons {
-    position: absolute;
-
-    z-index: 1;
-}
 
 .button-last {
     background: none;
@@ -1285,13 +1291,17 @@ header {
 }
 
 .pagination-bullet-list {
+    position: absolute;
+
     list-style: none;
 
     margin: 0;
-    margin-top: 60px;
+    margin-top: 225px;
     margin-left: 230px;
 
     display: flex;
+
+    z-index: 1;
 }
 
 .pagination-bullet-unit {
@@ -1354,7 +1364,6 @@ header {
     border: 1px solid #eaeaea;
 
     padding-bottom: 20px;
-    /* padding-top: 45px; */
     padding-left: 30px;
     padding-right: 30px;
     margin-bottom: 10px;
@@ -1401,7 +1410,7 @@ header {
     line-height: 18px;
     text-align: center;
 
-    border-radius: 3%;
+    border-radius: 3px;
 
     padding-bottom: 11px;
     padding-top: 11px;
@@ -1465,7 +1474,7 @@ header {
 
     background-color: #63a63e;
     border-bottom: 3px solid #367315;
-    border-radius: 5%;
+    border-radius: 3px;
 
     padding-top: 10px;
     padding-right: 42px;
@@ -1504,7 +1513,7 @@ header {
     text-transform: uppercase;
 
     border: 3px solid #63a63e;
-    border-radius: 5%;
+    border-radius: 3px;
 
     padding-bottom: 9px;
     padding-top: 9px;
@@ -1723,7 +1732,7 @@ header {
 
 .service-credit-button {
     border: none;
-    border-radius: 3%;
+    border-radius: 5px;
 
     padding-right: 45px;
     padding-left: 45px;
@@ -1786,7 +1795,7 @@ header {
 }
 
 .about-us-button {
-    border-radius: 3%;
+    border-radius: 3px;
 
     padding-bottom: 10px;
     padding-top: 10px;

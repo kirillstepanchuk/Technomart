@@ -18,16 +18,16 @@
                     <a href="#" aria-label="На главную" class="logo">
                         Техномарт
                     </a>
-                    <form class="header-form" action="https://echo.htmlacademy.ru" method="GET">
+                    <form class="header-search" action="https://echo.htmlacademy.ru" method="GET">
                         <label for="search">
-                            <input class="header-search" type="search" name="search" id="search" aria-label="Поиск по сайту" placeholder="Поиск:">
-                            <svg class="header-form-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+                            <input type="search" name="search" id="search" aria-label="Поиск по сайту" placeholder="Поиск:">
+                            <svg class="header-search-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
                                 <path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
                             </svg>                    
                         </label>
                     </form>
                 </div>  
-                 <div>
+                <div>
                     <a href="#" class="header-bookmarks">Закладки:<span>0</span></a>
                     <a href="#" class="header-basket">Корзина:<span>0</span></a>
                     <a href="#" class="header-checkout">Оформить заказ</a>
@@ -47,42 +47,44 @@
                     </a>
                     <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                 </div>
-                <div>  
-                    <div class="account-content">    
-                        <div class="account-user-content">           
-                            <a href="#" aria-label="Аккaунт пользователя" class="account-name">
-                                <svg class="header-icon-user" xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
-                                    <path fill="#c5c5c5" d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z"/>
+                <div>
+                    <div class="account-block">  
+                        <div class="account-content">    
+                            <div class="account-user-content">           
+                                <a href="#" aria-label="Аккaунт пользователя" class="account-name">
+                                    <svg class="header-icon-user" xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
+                                        <path fill="#c5c5c5" d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z"/>
+                                    </svg>
+                                    Равшан Джамшутович
+                                </a>  
+                            </div> 
+                            <a href="#" class="account-logout-button">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17">
+                                    <g fill="#c5c5c5">
+                                        <path fill="#c5c5c5" d="M21 8.5L12.125 0v6h-6v5h6v6z"/>
+                                        <path fill="#c5c5c5" d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z"/>
+                                    </g>
                                 </svg>
-                                Равшан Джамшутович
-                            </a>  
-                        </div> 
-                        <a href="#" class="account-logout-button">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17">
-                                <g fill="#c5c5c5">
-                                    <path fill="#c5c5c5" d="M21 8.5L12.125 0v6h-6v5h6v6z"/>
-                                    <path fill="#c5c5c5" d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z"/>
-                                </g>
-                            </svg>
-                        </a>
-                    </div>           
-                    <ul class="account-links">
-                        <li class="account-link">
-                            <a href="#" class="account-link-unit">Мои заказы</a>
-                        </li>
-                        <li><a href="#" class="account-link-unit">Личный кабинет</a></li>
-                    </ul>
+                            </a>
+                        </div>           
+                        <ul class="account-links">
+                            <li class="account-link">
+                                <a href="#" class="account-link-unit">Мои заказы</a>
+                            </li>
+                            <li><a href="#" class="account-link-unit">Личный кабинет</a></li>
+                        </ul>
+                    </div>
+                    <div class="header-account-buttons">                
+                        <a href="#" class="sign-in-button">
+                            <svg class="sign-in-button-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+                                <path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z"/>
+                                <path fill="#c5c5c5" d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/>
+                            </svg>    
+                            <span class="sign-in-button-text">Войти</span>
+                        </a>       
+                        <a href="#" class="registration-text">Регистрация</a>
+                    </div>
                 </div>
-            </div>
-            <div class="header-account-buttons">                
-                <a href="#" class="sign-in-button">
-                    <svg class="sign-in-button-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
-                        <path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z"/>
-                        <path fill="#c5c5c5" d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/>
-                    </svg>    
-                    <span class="sign-in-button-text">Войти</span>
-                </a>       
-                <a href="#" class="registration-text">Регистрация</a>
             </div>
             <nav class="navigaiton">
                 <ul class="navigation-list">
@@ -115,31 +117,29 @@
                 </div>
             </div>
             <div class="main-bottom-blocks">
-                <div class="slider">
-                    <div class="slider-navigation-buttons">
-                        <div class="slider-change-buttons">
-                            <button class="button-last" type="button" aria-label="Предыдущий слайд">
-                                <span class="visually-hidden">Предыдущий слайд</span>
-                            </button>
-                            <button class="button-next" type="button" aria-label="Следующий слайд">
-                                <span class="visually-hidden">Следующий слайд</span>
-                            </button>
-                        </div>
-                        <ul class="pagination-bullet-list">
-                            <li class="pagination-bullet-unit">
-                                <input type="radio" name="slider" id="first-slide">
-                                <label class="pagination-bullet" for="first-slide">
-                                    <span class="visually-hidden">Первый слайд</span>
-                                </label>
-                            </li>
-                            <li class="pagination-bullet-unit">
-                                <input type="radio" name="slider" id="second-slide">
-                                <label class="pagination-bullet" for="second-slide">
-                                    <span class="visually-hidden">Первый слайд</span>
-                                </label>
-                            </li>
-                        </ul> 
+                <div class="slider">   
+                    <div class="slider-change-buttons">
+                        <button class="button-last" type="button" aria-label="Предыдущий слайд">
+                            <span class="visually-hidden">Предыдущий слайд</span>
+                        </button>
+                        <button class="button-next" type="button" aria-label="Следующий слайд">
+                            <span class="visually-hidden">Следующий слайд</span>
+                        </button>
                     </div>
+                    <ul class="pagination-bullet-list">
+                        <li class="pagination-bullet-unit">
+                            <input type="radio" name="slider" id="first-slide">
+                            <label class="pagination-bullet" for="first-slide">
+                                <span class="visually-hidden">Первый слайд</span>
+                            </label>
+                        </li>
+                        <li class="pagination-bullet-unit">
+                            <input type="radio" name="slider" id="second-slide">
+                            <label class="pagination-bullet" for="second-slide">
+                                <span class="visually-hidden">Первый слайд</span>
+                            </label>
+                        </li>
+                    </ul> 
                     <div class="main-slider-block block-drill">
                         <h3 class="slider-block-title">Дрели</h3>
                         <p class="slider-block-inscription">Соседям на радость!</p>
