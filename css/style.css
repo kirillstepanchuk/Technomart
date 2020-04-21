@@ -218,6 +218,8 @@ input[type="radio"].visually-hidden {
 
 .main-header {
     background-color: #f3f7f9;
+
+    padding-bottom: 60px;
 }
 
 
@@ -281,14 +283,16 @@ input[type="radio"].visually-hidden {
     list-style: none;
 
     background-color: #32425c;
+    box-shadow: 0 5px 0 #293449;
 
     padding: 0;
 
     display: flex;
-    justify-content: space-around;
+    
+    flex-wrap: wrap;
 }
 
-.navigation-list::before {
+/* .navigation-list::before {
     content: "";
 
     position: absolute;
@@ -298,16 +302,18 @@ input[type="radio"].visually-hidden {
 
     width: 940px;
     height: 5px;
-}
+} */
 
 .navigation-list a {
     color: #ffffff;
     text-decoration: none;
     list-style-type: none;
 
-    padding-bottom: 20px;
+    /* box-shadow: 0 5px 0 #293449; */
+
+    padding-bottom: 16px;
     padding-top: 20px;
-    padding-right: 33px;
+    padding-right: 34px;
     padding-left: 33px;
 
     display: block;
@@ -514,13 +520,16 @@ input[type="radio"].visually-hidden {
     display: flex;
 }
 
-.catalog-link-list {
+.breadcrumbs {
     list-style: none;
 
+    padding: 0;
+
     display: flex;
+    flex-wrap: wrap;
 }
 
-.catalog-link {
+.breadcrumbs a {
     font-family: 'PT Sans', 'Arial', sans-serif;
     font-weight: 400;
     text-transform: uppercase;
@@ -528,19 +537,20 @@ input[type="radio"].visually-hidden {
     color: #000000;
     text-decoration: none;
 
-    margin-right: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-.catalog-link-unit {
+.breadcrumbs-unit {
     position: relative;
 } 
 
-.catalog-link-unit::before {
+.breadcrumbs-unit::before {
     content: "";
 
     position: absolute;
     top: 6px;
-    left: -25px;
+    left: -5px;
 
     border-right: 2px solid #d0d4da;
     border-top: 2px solid #d0d4da;
@@ -551,17 +561,18 @@ input[type="radio"].visually-hidden {
     transform: rotate(45deg);
 }
 
-.catalog-link-main {
+.breadcrumbs-main-link {
     position: relative;
-
-    margin-right: 50px;
+    
+    padding-left: 20px; 
 }
 
-.catalog-link-main::before {
+.breadcrumbs-main-link::before {
     content: "";
 
     position: absolute;
     top: 2px;
+    left: 0;
 
     background-image: url(../img/icon-home.svg);
 
