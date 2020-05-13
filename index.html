@@ -25,8 +25,8 @@
                         </svg>                    
                     </label>
                 </form>                
-                <a href="#" class="header-bookmarks">Закладки: <span>0</span></a>
-                <a href="#" class="header-basket">Корзина: <span>0</span></a>
+                <a href="#" class="header-bookmarks">Закладки:<span>0</span></a>
+                <a href="#" class="header-basket">Корзина:<span>0</span></a>
                 <a href="#" class="header-checkout">Оформить заказ</a>      
             </div>
         </div>
@@ -46,7 +46,7 @@
                 <div>
                     <div class="account-block">  
                         <div class="account-content">                                         
-                            <a href="#" class="account-user-content" aria-label="Аккaунт пользователя" class="account-name">
+                            <a href="#" class="account-user-content" aria-label="Аккaунт пользователя">
                                 <svg class="header-icon-user" xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18">
                                     <path fill="#c5c5c5" d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z"/>
                                 </svg>
@@ -429,26 +429,13 @@
         </div>          
     </section>
 
-    <!-- <section class="container">
-        <h2 class="visually-hidden">Адресс на карте</h2>
-        <div class="big-map-content">
-            <img src="img/big-map.png" alt="Большая Конюшенная ул., 19" width="970" height="476">
-            <button class="close-map-button" type="button">
-                <span class="visually-hidden">Закрыть</span>
-            </button>
-        </div>
-    </section> -->
-
     <section class=" modal modal-map">
         <h2 class="visually-hidden">Адресс на карте</h2>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.598942412368!2d30.320894615677183!3d59.938796869048424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sby!4v1589316977579!5m2!1sru!2sby"
         width="970" height="476" allowfullscreen=""></iframe>
-        <p class="big-map-content">
-            <img src="img/big-map.png" alt="Большая Конюшенная ул., 19" width="970" height="476">
             <button class="close-map-button" type="button">
                 <span class="visually-hidden">Закрыть</span>
             </button>
-        </p>
     </section>
 
     <section class="modal-checkout modal">
@@ -466,46 +453,7 @@
             </button>
         </div>
     </section>
-    <script>
-        var sign_in_button = document.querySelector(".sign-in-button");
-        var popup_feedback = document.querySelector(".modal-feedback");
-        var close_feedback = document.querySelector(".close-feedback");
-        var buy_button = document.querySelectorAll(".buy-button");
-        var popup_checkout = document.querySelector(".modal-checkout");
-        var close_checkout = document.querySelector(".close-checkout");
-        var map_button = document.querySelector(".about-us-map-button");
-        var popup_map = document.querySelector(".modal-map");
-        var close_map = document.querySelector(".close-map-button");
-
-        sign_in_button.addEventListener("click", function(evt) {
-            evt.preventDefault();
-            popup_feedback.classList.add("modal-show");
-            });
-        close_feedback.addEventListener("click", function(evt) {
-            evt.preventDefault();
-            popup_feedback.classList.remove("modal-show");
-            });
-        for(let i = 0; i < buy_button.length; i++){
-            button = buy_button[i];
-            button.addEventListener("click", function(evt){
-            evt.preventDefault();
-            popup_checkout.classList.add("modal-show");
-            });
-        }
-        close_checkout.addEventListener("click", function(evt) {
-            evt.preventDefault();
-            popup_checkout.classList.remove("modal-show");
-            });
-        map_button.addEventListener("click", function(evt) {
-            evt.preventDefault();
-            popup_map.classList.add("modal-show");
-        })
-        close_map.addEventListener("click", function(evt) {
-            evt.preventDefault();
-            popup_map.classList.remove("modal-show");
-            });
-      
-    </script>
+    <script src="js/scripts.js"></script>
    
 </body>
 </html>

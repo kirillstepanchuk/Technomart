@@ -376,8 +376,13 @@ input[type="radio"].visually-hidden {
     padding-right: 10px;
     padding-left: 13px;
     margin-top: 12px;
+    margin-left: 50px;
+
+    width: 300px;
 
     display: flex;
+
+    box-sizing: border-box;
 }
 
 .account-user-content {
@@ -385,7 +390,9 @@ input[type="radio"].visually-hidden {
     font-size: 21px;
     color: #000000;
 
-    margin-right: 30px;
+    margin-right: 25px;
+
+    display: flex;
 }
 
 .account-user-content:active {
@@ -408,20 +415,11 @@ input[type="radio"].visually-hidden {
     fill: #32425c;
 }
 
-.account-name {
-    font-size: 21px;
-    color: #000000;
-    text-decoration: none;
-
-    margin-right: 39px;
-
-    display: flex;
-}
-
 .account-links {
     color: #32425c;
 
     padding: 0;
+    margin-left: 50px;
 
     display: flex;
 }
@@ -2289,13 +2287,16 @@ input[type="radio"].visually-hidden {
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
+
+    background: url('../img/big-map.png') no-repeat;
+
+    width: 980px;
+    height: 506px;
 }
 
-.big-map-content {
+.modal-map iframe {
     position: relative;
 }
-
-
 
 .close-map-button {
     position: absolute;
