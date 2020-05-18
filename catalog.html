@@ -14,7 +14,7 @@
     <header class="main-header">
         <div class="header-navigation">
             <div class="container header-navigation-content">                
-                <a href="#" aria-label="На главную" class="logo">
+                <a href="file:///C:/Users/Admin/Desktop/tehnomart/www/index.html" aria-label="На главную" class="logo">
                     Техномарт
                 </a>
                 <form class="header-search" action="https://echo.htmlacademy.ru" method="GET">
@@ -25,8 +25,8 @@
                         </svg>                    
                     </label>
                 </form>                
-                <a href="#" class="header-bookmarks">Закладки:<span>0</span></a>
-                <a href="#" class="header-basket">Корзина:<span>0</span></a>
+                <a href="#" class="header-bookmarks">Закладки: <span>0</span></a>
+                <a href="#" class="header-basket">Корзина: <span>0</span></a>
                 <a href="#" class="header-checkout">Оформить заказ</a>      
             </div>
         </div>
@@ -34,7 +34,7 @@
             <div class="header-mid-content">
                 <h1>
                     Интернет-магазин
-                    строительных материалов
+                    строительных материалов <br>
                     и инструментов для ремонта
                 </h1>
                 <div class="header-contact">
@@ -82,7 +82,7 @@
                 <ul class="navigation-list">
                     <li><a href="#">Главная</a></li>
                     <li><a href="#">Компания</a></li>
-                    <li><a href="#">Каталог</a></li>
+                    <li><a href="file:///C:/Users/Admin/Desktop/tehnomart/www/catalog.html">Каталог</a></li>
                     <li><a href="#">Новости</a></li>
                     <li><a href="#">Спецпредложения</a></li>
                     <li><a href="#">Доставка</a></li>
@@ -93,7 +93,7 @@
     </header>
 
     <main>
-        <section class="main-blocks-services container">     
+        <section class="container">     
             <ul class="breadcrumbs">
                 <li>
                     <a href="#" class="breadcrumbs-main-link">
@@ -129,18 +129,18 @@
                             <div class="range-input">
                                 <label for="price-min" class="vissually-hidden">
                                     <span class="visually-hidden">Минимальная цена</span>
+                                    <input class="price-input" type="text" id="price-min">
                                 </label>
-                                <input class="price-input" type="text" id="price-min">
-                                <span>-</span>
+                                <span>—</span>
                                 <label for="price-max" class="vissually-hidden">
                                     <span class="visually-hidden">Максимальная цена</span>
+                                    <input class="price-input" type="text" id="price-max">
                                 </label>
-                                <input class="price-input" type="text" id="price-max">
                             </div>
                         </fieldset>    
                         <div class="filter-producer">                              
                             <fieldset>
-                                <legend class="filter-title">Производители:</legend>
+                                <legend class="filter-title filter-title-producer">Производители:</legend>
                                 <ul class="filter-option-list">
                                     <li class="filter-option">
                                         <label class="filter-option-checkbox-unit" for="filter-bosch">
@@ -182,7 +182,7 @@
                         </div>     
                         <div class="filter-charge">                                 
                             <fieldset>
-                                <legend class="filter-title">Питание:</legend>
+                                <legend class="filter-title filter-title-charge">Питание:</legend>
                                 <ul class="filter-option-list">
                                     <li class="filter-option">
                                         <label class="filter-option-radio-unit" for="filter-battery">
@@ -206,13 +206,13 @@
                 </div>
                 <div class="product-content">
                     <div class="sorting">
-                        <h3 class="sorting-title">Сортировка:</h3>
+                        <h3>Сортировка:</h3>
                         <ul class="sorting-list">
-                            <li><a href="#" class="sorting-unit">По цене</a></li>
-                            <li><a href="#" class="sorting-unit">По типу</a></li>
-                            <li><a href="#" class="sorting-unit">По функционалу</a></li>
+                            <li><a href="#" class="sorting-unit sorting-unit-price">По цене</a></li>
+                            <li><a href="#" class="sorting-unit sorting-unit-type">По типу</a></li>
+                            <li><a href="#" class="sorting-unit sorting-unit-functional">По функционалу</a></li>
                         </ul>
-                        <ul class="sorting-list">
+                        <ul class="sorting-list sorting-list-button">
                             <li>
                                 <a href="#" class="sorting-unit-ascending sorting-unit-button">
                                     <span class="visually-hidden">По возрастанию</span>
@@ -234,7 +234,7 @@
                     <div class="product-catalog">
                         <div class="popular-product-block">
                             <div class="popular-products-buttons">
-                                <a href="#" class="buy-button">Купить</a>
+                                <a href="buy.html" class="buy-button">Купить</a>
                                 <a href="#" class="to-bookmarks-button">В закладки</a>
                             </div>                    
                             <img class="popular-image" src="img/hummer-drill.png" alt="Перфоратор 3" width="218" height="182">
@@ -244,7 +244,7 @@
                         </div>
                         <div class="popular-product-block">
                             <div class="popular-products-buttons">
-                                <a href="#" class="buy-button">Купить</a>
+                                <a href="buy.html" class="buy-button">Купить</a>
                                 <a href="#" class="to-bookmarks-button">В закладки</a>
                             </div>                            
                             <img class="popular-image" src="img/hummer-drill-2.png" alt="Перфоратор 2" width="218" height="182">                            
@@ -254,17 +254,17 @@
                         </div>
                         <div class="popular-product-block product-block-new">
                             <div class="popular-products-buttons">
-                                <a href="#" class="buy-button">Купить</a>
+                                <a href="buy.html" class="buy-button">Купить</a>
                                 <a href="#" class="to-bookmarks-button">В закладки</a>
                             </div> 
-                            <img class="popular-image" src="img/hummer-drill.png" alt="Перфоратор 1" width="218" height="182">                            
+                            <img class="popular-image" src="img/hummer-drill-4.png" alt="Перфоратор 1" width="218" height="182">                            
                             <h3 class="product-name">Перфоратор <span>Bosch BFG 2000</span></h3>
                             <span class="product-old-price"></span>
                             <a href="#" class="product-price">12500 P.</a>
                         </div>                   
                         <div class="popular-product-block">
                             <div class="popular-products-buttons">
-                                <a href="#" class="buy-button">Купить</a>
+                                <a href="buy.html" class="buy-button">Купить</a>
                                 <a href="#" class="to-bookmarks-button">В закладки</a>
                             </div>                 
                             <img class="popular-image" src="img/hummer-drill.png" alt="Перфоратор 3" width="218" height="182">                            
@@ -274,7 +274,7 @@
                         </div>
                         <div class="popular-product-block product-block-new">
                             <div class="popular-products-buttons">
-                                <a href="#" class="buy-button">Купить</a>
+                                <a href="buy.html" class="buy-button">Купить</a>
                                 <a href="#" class="to-bookmarks-button">В закладки</a>
                             </div> 
                             <img class="popular-image" src="img/hummer-drill-2.png" alt="Перфоратор 2" width="218" height="182">
@@ -284,17 +284,17 @@
                         </div>
                         <div class="popular-product-block">
                             <div class="popular-products-buttons">
-                                <a href="#" class="buy-button">Купить</a>
+                                <a href="buy.html" class="buy-button">Купить</a>
                                 <a href="#" class="to-bookmarks-button">В закладки</a>
                             </div>                             
-                            <img class="popular-image" src="img/hummer-drill.png" alt="Перфоратор 1" width="218" height="182">                            
+                            <img class="popular-image" src="img/hummer-drill-4.png" alt="Перфоратор 1" width="218" height="182">                            
                             <h3 class="product-name">Перфоратор <span>Bosch BFG 2000</span></h3>
                             <span class="product-old-price"></span>
                             <a href="#" class="product-price">12500 P.</a>
                         </div>
                         <div class="popular-product-block product-block-new">
                             <div class="popular-products-buttons">
-                                <a href="#" class="buy-button">Купить</a>
+                                <a href="buy.html" class="buy-button">Купить</a>
                                 <a href="#" class="to-bookmarks-button">В закладки</a>
                             </div>                             
                             <img class="popular-image" src="img/hummer-drill.png" alt="Перфоратор 3" width="218" height="182">                            
@@ -304,7 +304,7 @@
                         </div>
                         <div class="popular-product-block">
                             <div class="popular-products-buttons">
-                                <a href="#" class="buy-button">Купить</a>
+                                <a href="buy.html" class="buy-button">Купить</a>
                                 <a href="#" class="to-bookmarks-button">В закладки</a>
                             </div> 
                             <img class="popular-image" src="img/hummer-drill-2.png" alt="Перфоратор 2" width="218" height="182">
@@ -314,10 +314,10 @@
                         </div>
                         <div class="popular-product-block">
                             <div class="popular-products-buttons">
-                                <a href="#" class="buy-button">Купить</a>
+                                <a href="buy.html" class="buy-button">Купить</a>
                                 <a href="#" class="to-bookmarks-button">В закладки</a>
                             </div>                     
-                            <img class="popular-image" src="img/hummer-drill.png" alt="Перфоратор 1" width="218" height="182">
+                            <img class="popular-image" src="img/hummer-drill-4.png" alt="Перфоратор 1" width="218" height="182">
                             <h3 class="product-name">Перфоратор <span>Bosch BFG 2000</span></h3>
                             <span class="product-old-price"></span>
                             <a href="#" class="product-price">12500 P.</a>
@@ -336,7 +336,7 @@
         <section class="about-drill">
             <div class="about-drill-content container">
                 <h2 class="about-drill-title">Пара слов о перфораторах</h2>
-                <p class="about-drill-inscription">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+                <p class="about-drill-inscription">Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
                 Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
             </div>
         </section>   
@@ -416,10 +416,36 @@
         </div>
     </footer>
 
-    <section>
+    <section class="modal-feedback modal">  
+        <div class="feedback-content">         
+            <h2 class="visually-hidden">Обратная связь</h2>
+            <button class="close-feedback" type="button" aria-label="Закрыть окно">
+                <span class="visually-hidden">Закрыть</span>
+            </button>
+            <div>
+                <form action="https://echo.htmlacademy.ru" method="POST">
+                    <div class="feedback-top">
+                        <div class="feedback-top-item-left">
+                            <label for="feedback-user-name" class="feedback-title">Ваше имя:</label>
+                            <input class="feedback-user-name-input" type="text" name="name" id="feedback-user-name" placeholder="Имя Фамилия">
+                        </div>
+                        <div>
+                            <label for="feedback-e-mail" class="feedback-title">Ваш e-mail:</label>
+                            <input class="feedback-e-mail-input" type="text" name="e-mail" id="feedback-e-mail" placeholder="email@example.com">
+                        </div>
+                    </div>
+                    <label for="feedback-message" class="feedback-title">Текст письма:</label>
+                    <textarea class="feedback-message-input" name="message" id="feedback-message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+                    <button type="submit" class="feedback-button button">Отправить</button>
+                </form>
+            </div>
+        </div>          
+    </section>
+
+    <section class="modal-checkout modal">
         <h2 class="visually-hidden">Добавление в корзину</h2>
         <div class="checkout-content ">
-            <button class="close-checkout" type="button" aria-label="Закрыть окно">
+            <button class="close-checkout" type="button">
                 <span class="visually-hidden">Закрыть</span>
             </button>
             <p class="checkout-inscription">Товар добавлен в корзину!</p>

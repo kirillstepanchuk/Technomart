@@ -1,4 +1,4 @@
-var sign_in_button = document.querySelector(".sign-in-button");
+var write_us_button = document.querySelector(".about-us-adress-button");
 var popup_feedback = document.querySelector(".modal-feedback");
 var close_feedback = document.querySelector(".close-feedback");
 var buy_button = document.querySelectorAll(".buy-button");
@@ -9,7 +9,7 @@ var popup_map = document.querySelector(".modal-map");
 var close_map = document.querySelector(".close-map-button");
 var continue_checkout = document.querySelector(".checkout-button-continue");
 
-sign_in_button.addEventListener("click", function(evt) {
+write_us_button.addEventListener("click", function(evt) {
     evt.preventDefault();
     popup_feedback.classList.add("modal-show");
 });
