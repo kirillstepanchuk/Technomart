@@ -10,7 +10,7 @@ body {
     padding: 0;
 }
 
-img{
+img {
     max-width: 100%;
     height: auto;
 }
@@ -82,6 +82,7 @@ input[type="radio"].visually-hidden {
     width: 200px;
     
     display: inline-block;
+    vertical-align: top;
 }
 
 .header-bookmarks {
@@ -97,6 +98,7 @@ input[type="radio"].visually-hidden {
     width: 150px;
 
     display: inline-block;
+    vertical-align: top;
 
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -109,7 +111,7 @@ input[type="radio"].visually-hidden {
     top: 12px;
     left: 17px;
 
-    background-image: url(../img/icon-bookmark.svg);
+    background-image: url('../img/icon-bookmark.svg');
     background-repeat: no-repeat;
     background-position: 0 0;
     opacity: 0.3;
@@ -143,6 +145,7 @@ input[type="radio"].visually-hidden {
     width: 150px;
 
     display: inline-block;
+    vertical-align: top;
 
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -155,7 +158,7 @@ input[type="radio"].visually-hidden {
     top: 12px;
     left: 18px;
 
-    background-image: url(../img/icon-cart.svg);
+    background-image: url('../img/icon-cart.svg');
     background-repeat: no-repeat;
     opacity: 0.3;
 
@@ -193,6 +196,7 @@ input[type="radio"].visually-hidden {
     width: 150px;
 
     display: inline-block;
+    vertical-align: top;
 
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -383,6 +387,7 @@ input[type="radio"].visually-hidden {
     height: 45px;
 
     display: inline-block;
+    vertical-align: top;
 
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -395,7 +400,7 @@ input[type="radio"].visually-hidden {
     left: 12px;
     top: 10px;
 
-    background-image: url(../img/icon-phone.svg);
+    background-image: url('../img/icon-phone.svg');
 
     width: 19px;
     height: 19px;
@@ -552,7 +557,7 @@ input[type="radio"].visually-hidden {
     fill: #32425c;
 }
 
-.registration-text {
+.registration-button {
     font-size: 21px;
     color: #000000;
     text-decoration: none;
@@ -570,11 +575,11 @@ input[type="radio"].visually-hidden {
             box-sizing: border-box;
 }
 
-.registration-text:hover {
+.registration-button:hover {
     color: #ee3643;
 }
 
-.registration-text:active {
+.registration-button:active {
     color: #b2b2b2;
 }
 
@@ -658,7 +663,7 @@ input[type="radio"].visually-hidden {
     top: 2px;
     left: -2px;
 
-    background-image: url(../img/icon-home.svg);
+    background-image: url('../img/icon-home.svg');
 
     width: 14px;
     height: 12px;
@@ -814,6 +819,7 @@ input[type="radio"].visually-hidden {
     height: 22px;
 
     outline: none;
+    cursor: pointer;
 }
 
 .range-button::after {
@@ -869,9 +875,7 @@ input[type="radio"].visually-hidden {
     font-weight: 400;
 
     display: -webkit-box;
-
     display: -ms-flexbox;
-
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -1046,7 +1050,7 @@ input[type="radio"].visually-hidden {
     top: -2px;
     left: -35px;
 
-    background-image: url(../img/checkbox-off.svg);
+    background-image: url('../img/checkbox-off.svg');
     
     width: 23px;
     height: 23px;
@@ -1057,7 +1061,7 @@ input[type="radio"].visually-hidden {
     top: -2px;
     left: -35px;
 
-    background-image: url(../img/checkbox-off.svg);
+    background-image: url('../img/checkbox-off.svg');
     
     width: 23px;
     height: 23px;
@@ -1070,7 +1074,7 @@ input[type="radio"].visually-hidden {
     top: -2px;
     left: -35px;
 
-    background-image: url(../img/checkbox-off-hover.svg);
+    background-image: url('../img/checkbox-off-hover.svg');
     
     width: 23px;
     height: 23px;
@@ -1082,7 +1086,7 @@ input[type="radio"].visually-hidden {
     position: absolute;
 
     background-color: #ffffff;
-    background-image: url(../img/checkbox-on.svg);
+    background-image: url('../img/checkbox-on.svg');
 
     width: 26px;
     height: 23px;
@@ -1094,7 +1098,7 @@ input[type="radio"].visually-hidden {
     position: absolute;
 
     background-color: #ffffff;
-    background-image: url(../img/checkbox-on.svg);
+    background-image: url('../img/checkbox-on.svg');
 
     width: 26px;
     height: 23px;
@@ -1108,7 +1112,7 @@ input[type="radio"].visually-hidden {
     position: absolute;
 
     background-color: #ffffff;
-    background-image: url(../img/checkbox-on-hover.svg);
+    background-image: url('../img/checkbox-on-hover.svg');
 
     width: 26px;
     height: 23px;
@@ -1274,6 +1278,7 @@ input[type="radio"].visually-hidden {
     height: 38px;
    
     display: inline-block;
+    vertical-align: top;
 
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -1309,6 +1314,7 @@ input[type="radio"].visually-hidden {
     height: 38px;
 
     display: inline-block;
+    vertical-align: top;
 
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -1339,7 +1345,7 @@ input[type="radio"].visually-hidden {
     top: 31px;
     left: 213px;
 
-    background-image: url(../img/icon-1.svg);
+    background-image: url('../img/icon-1.svg');
 
     width: 44px;
     height: 65px;
@@ -1360,7 +1366,7 @@ input[type="radio"].visually-hidden {
     top: 33px;
     left: 197px;
 
-    background-image: url(../img/icon-2.svg);
+    background-image: url('../img/icon-2.svg');
 
     width: 75px;
     height: 60px;
@@ -1388,7 +1394,7 @@ input[type="radio"].visually-hidden {
     top: 31px;
     left: 191px;
 
-    background-image: url(../img/icon-3.svg);
+    background-image: url('../img/icon-3.svg');
 
     width: 78px;
     height: 62px;
@@ -1409,7 +1415,7 @@ input[type="radio"].visually-hidden {
     top: 26px;
     left: 196px;
 
-    background-image: url(../img/icon-4.svg);
+    background-image: url('../img/icon-4.svg');
 
     width: 59px;
     height: 72px;
@@ -1430,7 +1436,7 @@ input[type="radio"].visually-hidden {
     top: 32px;
     left: 191px;
 
-    background-image: url(../img/icon-5.svg);
+    background-image: url('../img/icon-5.svg');
 
     width: 78px;
     height: 63px;
@@ -1716,7 +1722,7 @@ input[type="radio"].visually-hidden {
     top: -1px;
     right: -1px;
 
-    background-image: url(../img/new-flag.png);
+    background-image: url('../img/new-flag.png');
 
     width: 60px;
     height: 59px;
@@ -1730,9 +1736,7 @@ input[type="radio"].visually-hidden {
     margin-top: 53px;
 
     display: -webkit-box;
-
     display: -ms-flexbox;
-
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -1771,6 +1775,7 @@ input[type="radio"].visually-hidden {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .popular-headline {
@@ -1843,7 +1848,7 @@ input[type="radio"].visually-hidden {
     top: 11px;
     left: 14px;
 
-    background-image: url(../img/icon-cart.svg);
+    background-image: url('../img/icon-cart.svg');
     opacity: 0.3;
 
     width: 15px;
@@ -1895,6 +1900,7 @@ input[type="radio"].visually-hidden {
 .popular-produce {
     padding-bottom: 85px;
     margin-top: 1px;
+    margin-left: -20px;
 
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1903,13 +1909,13 @@ input[type="radio"].visually-hidden {
         flex-wrap: wrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between;
 }
 
 .popular-produce a {
     border: 1px solid #eaeaea;
 
     margin-top: 20px;
+    margin-left: 20px;
 
     width: 218px;
     height: 143px;
@@ -2026,7 +2032,7 @@ input[type="radio"].visually-hidden {
     top: -42px;
     right: 0;
 
-    background: url(../img/shadow.png) no-repeat;
+    background: url('../img/shadow.png') no-repeat;
 
     width: 10px;
     height: 279px;
@@ -2095,7 +2101,7 @@ input[type="radio"].visually-hidden {
     top: 39px;
     left: 231px;
 
-    background-image: url(../img/car.png);
+    background-image: url('../img/car.png');
 
     width: 468px;
     height: 261px;
@@ -2117,7 +2123,7 @@ input[type="radio"].visually-hidden {
     left: 320px;
     top: 0;
 
-    background-image: url(../img/medal.png);
+    background-image: url('../img/medal.png');
 
     width: 389px;
     height: 283px;
@@ -2139,7 +2145,7 @@ input[type="radio"].visually-hidden {
     left: 245px;
     top: 0;
 
-    background-image: url(../img/credit.png);
+    background-image: url('../img/credit.png');
 
     width: 465px;
     height: 285px;
@@ -2354,7 +2360,7 @@ input[type="radio"].visually-hidden {
     top: -40px;
 
     background: none;
-    background-image: url(../img/icon-close.svg);
+    background-image: url('../img/icon-close.svg');
     border: none;
 
     width: 21px;
@@ -2411,7 +2417,7 @@ input[type="radio"].visually-hidden {
     top: -20px;
 
     background: none;
-    background-image: url(../img/icon-close.svg);
+    background-image: url('../img/icon-close.svg');
     border: none;
 
     width: 21px;
@@ -2442,7 +2448,7 @@ input[type="radio"].visually-hidden {
     top: 48px;
     left: 80px;
 
-    background-image: url(../img/icon-mark.svg);
+    background-image: url('../img/icon-mark.svg');
 
     width: 66px;
     height: 66px;
@@ -2757,7 +2763,7 @@ input[type="radio"].visually-hidden {
     right: 20px;
 
     background: none;
-    background-image: url(../img/icon-close.svg);
+    background-image: url('../img/icon-close.svg');
     border: none;
 
     width: 21px;
