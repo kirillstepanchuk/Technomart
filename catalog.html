@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&display=swap&subset=cyrillic" 
         rel="stylesheet">
     <link rel="stylesheet" href="css/normalize-min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-min.css">
     <title>Каталог</title>
 </head>
 <body>
@@ -24,7 +24,7 @@
                     </label>
                 </form>                
                 <a href="#" class="header-bookmarks">Закладки: <span>0</span></a>
-                <a href="#" class="header-basket">Корзина: <span>0</span></a>
+                <a href="#" class="header-basket header-button-full">Корзина: <span>0</span></a>
                 <a href="#" class="header-checkout">Оформить заказ</a>      
             </div>
         </div>
@@ -64,7 +64,7 @@
                             <li><a href="#" class="account-link-unit">Личный кабинет</a></li>
                         </ul>
                     </div>
-                    <div class="header-account-buttons">                
+                    <div class="header-account-buttons account-block-close">                
                         <a href="#" class="sign-in-button">
                             <svg class="sign-in-button-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
                                 <path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z"/>
@@ -72,7 +72,7 @@
                             </svg>    
                             <span class="sign-in-button-text">Войти</span>
                         </a>       
-                        <a href="#" class="registration-button">Регистрация</a>
+                        <a href="#" class="registration-button"><span>Регистрация</span></a>
                     </div>
                 </div>
             </div>
@@ -139,41 +139,26 @@
                         <div class="filter-producer">                              
                             <fieldset>
                                 <legend class="filter-title filter-title-producer">Производители:</legend>
-                                <ul class="filter-option-list">
+                                <ul class="filter-option-list">                        
                                     <li class="filter-option">
-                                        <label class="filter-option-checkbox-unit" for="filter-bosch">
-                                            <input class="visually-hidden" type="checkbox" name="bosch" id="filter-bosch" checked>
-                                            <span class="checkbox-indicator"></span>
-                                            Bosch
-                                        </label>
+                                        <input class="visually-hidden" type="checkbox" name="bosch" id="filter-bosch" checked >
+                                        <label for="filter-bosch">Bosch</label>                                        
                                     </li>
                                     <li class="filter-option">
-                                        <label class="filter-option-checkbox-unit" for="filter-interskol">
-                                            <input class="visually-hidden" type="checkbox" name="interskol" id="filter-interskol">
-                                            <span class="checkbox-indicator"></span>
-                                            Интерскол
-                                        </label>
+                                        <input class="visually-hidden" type="checkbox" name="interskol" id="filter-interskol">
+                                        <label for="filter-interskol">Интерскол</label>
                                     </li>
                                     <li class="filter-option">
-                                        <label class="filter-option-checkbox-unit" for="filter-makita">
-                                            <input class="visually-hidden" type="checkbox" name="makita" id="filter-makita">
-                                            <span class="checkbox-indicator"></span>
-                                            Makita
-                                        </label>
+                                        <input class="visually-hidden" type="checkbox" name="makita" id="filter-makita" checked>
+                                        <label for="filter-makita">Makita</label>
                                     </li>
                                     <li  class="filter-option">
-                                        <label class="filter-option-checkbox-unit" for="filter-dewalt">
-                                            <input class="visually-hidden" type="checkbox" name="dewalt" id="filter-dewalt">
-                                            <span class="checkbox-indicator"></span>
-                                            DeWalt
-                                        </label>
+                                        <input class="visually-hidden" type="checkbox" name="dewalt" id="filter-dewalt" >
+                                        <label for="filter-dewalt">DeWalt</label>
                                     </li>
                                     <li class="filter-option">
-                                        <label class="filter-option-checkbox-unit" for="filter-hitachi">
-                                            <input class="visually-hidden" type="checkbox" name="hitachi" id="filter-hitachi">
-                                            <span class="checkbox-indicator"></span>
-                                            Hitachi
-                                        </label>
+                                        <input class="visually-hidden" type="checkbox" name="hitachi" id="filter-hitachi">
+                                        <label for="filter-hitachi">Hitachi</label>
                                     </li>
                                 </ul>
                             </fieldset>
@@ -183,18 +168,12 @@
                                 <legend class="filter-title filter-title-charge">Питание:</legend>
                                 <ul class="filter-option-list">
                                     <li class="filter-option">
-                                        <label class="filter-option-radio-unit" for="filter-battery">
-                                            <input class="visually-hidden" type="radio" name="charge" id="filter-battery" checked> 
-                                            <span class="radio-indicator"></span>
-                                            Аккумуляторные
-                                        </label>
+                                        <input class="visually-hidden" type="radio" name="charge" id="filter-battery" checked> 
+                                        <label for="filter-battery">Аккумуляторные</label>
                                     </li>
                                     <li class="filter-option">
-                                        <label class="filter-option-radio-unit" for="filter-network">
-                                            <input class="visually-hidden" type="radio" name="charge" id="filter-network">
-                                            <span class="radio-indicator"></span>
-                                            Сетевые
-                                        </label>
+                                        <input class="visually-hidden" type="radio" name="charge" id="filter-network">
+                                        <label for="filter-network">Сетевые</label>
                                     </li>
                                 </ul>
                             </fieldset>    
@@ -212,15 +191,15 @@
                         </ul>
                         <ul class="sorting-list sorting-list-button">
                             <li>
-                                <a href="#" class="sorting-unit-ascending sorting-unit-button" aria-label="По возрастанию">
-                                    <svg class="sorting-unit-ascending-image sorting-unit-image" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                                <a href="#" class="sorting-unit-ascending sorting-unit-button sorting-unit-button-active" aria-label="По возрастанию">
+                                    <svg class="sorting-unit-ascending-image" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                                         <path fill="#231F20" d="M5.5 10L0 0h11"/>
                                     </svg>
                                 </a>
                             </li>
                             <li>
                                 <a href="#" class="sorting-unit-decrease sorting-unit-button" aria-label="По убыванию">
-                                    <svg class="sorting-unit-decrease-image sorting-unit-image" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                                    <svg class="sorting-unit-decrease-image" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                                         <path fill="#231F20" d="M5.5 10L0 0h11"/>
                                     </svg>
                                 </a>
@@ -403,7 +382,7 @@
                     </div>
                     <div>
                         <span>Разработано —</span><br>
-                        <a href="htmlacademy.ru" aria-label="Ссылка на htmlacademy">
+                        <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Ссылка на htmlacademy">
                             htmlacademy.ru
                         </a>
                      </div>
@@ -453,7 +432,7 @@
             </button>
         </div>
     </section>
-    <script src="js/scripts.js"></script>
+    <script src="js/scripts-min.js"></script>
 
 </body>
 </html>
