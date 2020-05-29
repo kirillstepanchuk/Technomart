@@ -1306,17 +1306,7 @@ input[type="radio"].visually-hidden {
     border-bottom: 1px solid #ee3643;
 }
 
-.sorting-unit:focus {
-    color: #ee3643;
-
-    border: none;
-}
-
 .sorting-unit-price {
-    color: #ee3643;
-
-    border: none;
-
     margin-left: 140px;
 }
 
@@ -1326,6 +1316,18 @@ input[type="radio"].visually-hidden {
 
 .sorting-unit-functional {
     margin-left: 65px;
+}
+
+.sorting-unit-active {
+    color: #ee3643;
+
+    border: none;
+}
+
+.sorting-unit-active:hover {
+    color: #ee3643;
+
+    border: none;
 }
 
 .sorting-unit-ascending {
@@ -1351,6 +1353,9 @@ input[type="radio"].visually-hidden {
     fill: #ee3643;
 }
 
+.sorting-unit-button-active:hover path {
+    fill: #ee3643;
+}
 
 .catalog-link-list {
     list-style: none;
@@ -1741,7 +1746,7 @@ input[type="radio"].visually-hidden {
     list-style: none;
 
     margin: 0;
-    margin-top: 226px;
+    margin-top: 241px;
     margin-left: 230px;
 
     display: -webkit-box;
@@ -2213,6 +2218,8 @@ input[type="radio"].visually-hidden {
     font-weight: 400;
 
     padding-left: 80px;
+
+    display: none;
 }
 
 .service-block-delivery::after {
@@ -2268,6 +2275,10 @@ input[type="radio"].visually-hidden {
 
     width: 465px;
     height: 285px;
+}
+
+.service-block-active {
+    display: block;
 }
 
 .service-credit-button {
@@ -2697,6 +2708,8 @@ input[type="radio"].visually-hidden {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .footer-nav {
@@ -2914,5 +2927,4 @@ input[type="radio"].visually-hidden {
 
     z-index: 1;
 }
-
 
