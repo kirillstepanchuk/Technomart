@@ -10,17 +10,15 @@ var close_map = document.querySelector(".close-map-button");
 var continue_checkout = document.querySelector(".checkout-button-continue");
 
 if(about_us_adress_button != null){
-about_us_adress_button.addEventListener("click", function(evt) {
-    evt.preventDefault();
-    popup_feedback.classList.add("modal-show");
-});
-}
-
+    about_us_adress_button.addEventListener("click", function(evt) {
+        evt.preventDefault();
+        popup_feedback.classList.add("modal-show");
+    });
+};
 close_feedback.addEventListener("click", function(evt) {
     evt.preventDefault();
     popup_feedback.classList.remove("modal-show");
 });
-
 for(let i = 0; i < buy_button.length; i++){
     button = buy_button[i];
     button.addEventListener("click", function(evt){
@@ -28,7 +26,6 @@ for(let i = 0; i < buy_button.length; i++){
         popup_checkout.classList.add("modal-show");
     });
 };
-
 close_checkout.addEventListener("click", function(evt) {
     evt.preventDefault();
     popup_checkout.classList.remove("modal-show");

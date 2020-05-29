@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&display=swap&subset=cyrillic" 
         rel="stylesheet">
     <link rel="stylesheet" href="css/normalize-min.css">
-    <link rel="stylesheet" href="css/style-min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Каталог</title>
 </head>
 <body>
@@ -14,7 +14,7 @@
     <header class="main-header">
         <div class="header-navigation">
             <div class="container header-navigation-content">                
-                <a href="index.html" aria-label="На главную" class="logo">Техномарт</a>
+                <a href="index.html" class="logo">Техномарт</a>
                 <form class="header-search" action="https://echo.htmlacademy.ru" method="GET">
                     <label for="search">
                         <input type="search" name="search" id="search" aria-label="Поиск по сайту" placeholder="Поиск:">
@@ -36,9 +36,7 @@
                     и инструментов для ремонта
                 </h1>
                 <div class="header-contact">
-                    <a href="tel:+7(812)555-05-55" aria-label="Номер телефона" class="phone-number">
-                        +7 (812) 555-05-55
-                    </a>
+                    <a href="tel:+7(812)555-05-55" aria-label="Номер телефона" class="phone-number">+7 (812) 555-05-55</a>
                     <p class="adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                 </div>
                 <div>
@@ -50,7 +48,7 @@
                                 </svg>
                                 Равшан Джамшутович
                             </a>                              
-                            <a href="#" class="account-logout-button" aria-label="Выйти из аккаунта">
+                            <a href="#" class="account-logout-button">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17">
                                     <g fill="#c5c5c5">
                                         <path fill="#c5c5c5" d="M21 8.5L12.125 0v6h-6v5h6v6z"/>
@@ -72,7 +70,9 @@
                             </svg>    
                             <span class="sign-in-button-text">Войти</span>
                         </a>       
-                        <a href="#" class="registration-button"><span>Регистрация</span></a>
+                        <a href="#" class="registration-button">
+                            <span>Регистрация</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -91,10 +91,11 @@
     </header>
 
     <main>
+
         <section class="container">     
             <ul class="breadcrumbs">
                 <li>
-                    <a href="#" class="breadcrumbs-main-link">
+                    <a href="index.html" class="breadcrumbs-main-link">
                         <span class="visually-hidden">Главная</span>
                     </a>
                 </li>
@@ -141,7 +142,7 @@
                                 <legend class="filter-title filter-title-producer">Производители:</legend>
                                 <ul class="filter-option-list">                        
                                     <li class="filter-option">
-                                        <input class="visually-hidden" type="checkbox" name="bosch" id="filter-bosch" checked >
+                                        <input class="visually-hidden" type="checkbox" name="bosch" id="filter-bosch" checked>
                                         <label for="filter-bosch">Bosch</label>                                        
                                     </li>
                                     <li class="filter-option">
@@ -209,7 +210,14 @@
                     <div class="product-catalog">
                         <div class="popular-product-block">
                             <div class="popular-products-buttons">
-                                <a href="buy.html" class="buy-button">Купить</a>
+                                <a href="buy.html" class="buy-button">
+                                    <svg class="buy-button-image" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                        <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/>
+                                        <circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/>
+                                        <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
+                                    </svg>
+                                    Купить
+                                </a>
                                 <a href="#" class="to-bookmarks-button">В закладки</a>
                             </div>                    
                             <img class="popular-image" src="img/hummer-drill.jpg" alt="Перфоратор 3" width="218" height="182">
@@ -219,7 +227,14 @@
                         </div>
                         <div class="popular-product-block">
                             <div class="popular-products-buttons">
-                                <a href="buy.html" class="buy-button">Купить</a>
+                                <a href="buy.html" class="buy-button">
+                                    <svg class="buy-button-image" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                        <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/>
+                                        <circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/>
+                                        <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
+                                    </svg>
+                                    Купить
+                                </a>
                                 <a href="#" class="to-bookmarks-button">В закладки</a>
                             </div>                            
                             <img class="popular-image" src="img/hummer-drill-2.jpg" alt="Перфоратор 2" width="218" height="182">                            
@@ -229,7 +244,14 @@
                         </div>
                         <div class="popular-product-block product-block-new">
                             <div class="popular-products-buttons">
-                                <a href="buy.html" class="buy-button">Купить</a>
+                                <a href="buy.html" class="buy-button">
+                                    <svg class="buy-button-image" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                        <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/>
+                                        <circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/>
+                                        <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
+                                    </svg>
+                                    Купить
+                                </a>
                                 <a href="#" class="to-bookmarks-button">В закладки</a>
                             </div> 
                             <img class="popular-image" src="img/hummer-drill-4.jpg" alt="Перфоратор 1" width="218" height="182">                            
@@ -239,7 +261,14 @@
                         </div>                   
                         <div class="popular-product-block">
                             <div class="popular-products-buttons">
-                                <a href="buy.html" class="buy-button">Купить</a>
+                                <a href="buy.html" class="buy-button">
+                                    <svg class="buy-button-image" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                        <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/>
+                                        <circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/>
+                                        <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
+                                    </svg>
+                                    Купить
+                                </a>
                                 <a href="#" class="to-bookmarks-button">В закладки</a>
                             </div>                 
                             <img class="popular-image" src="img/hummer-drill.jpg" alt="Перфоратор 3" width="218" height="182">                            
@@ -249,7 +278,14 @@
                         </div>
                         <div class="popular-product-block product-block-new">
                             <div class="popular-products-buttons">
-                                <a href="buy.html" class="buy-button">Купить</a>
+                                <a href="buy.html" class="buy-button">
+                                    <svg class="buy-button-image" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                        <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/>
+                                        <circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/>
+                                        <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
+                                    </svg>
+                                    Купить
+                                </a>
                                 <a href="#" class="to-bookmarks-button">В закладки</a>
                             </div> 
                             <img class="popular-image" src="img/hummer-drill-2.jpg" alt="Перфоратор 2" width="218" height="182">
@@ -259,7 +295,14 @@
                         </div>
                         <div class="popular-product-block">
                             <div class="popular-products-buttons">
-                                <a href="buy.html" class="buy-button">Купить</a>
+                                <a href="buy.html" class="buy-button">
+                                    <svg class="buy-button-image" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                        <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/>
+                                        <circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/>
+                                        <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
+                                    </svg>
+                                    Купить
+                                </a>
                                 <a href="#" class="to-bookmarks-button">В закладки</a>
                             </div>                             
                             <img class="popular-image" src="img/hummer-drill-4.jpg" alt="Перфоратор 1" width="218" height="182">                            
@@ -269,7 +312,14 @@
                         </div>
                         <div class="popular-product-block product-block-new">
                             <div class="popular-products-buttons">
-                                <a href="buy.html" class="buy-button">Купить</a>
+                                <a href="buy.html" class="buy-button">
+                                    <svg class="buy-button-image" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                        <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/>
+                                        <circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/>
+                                        <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
+                                    </svg>
+                                    Купить
+                                </a>
                                 <a href="#" class="to-bookmarks-button">В закладки</a>
                             </div>                             
                             <img class="popular-image" src="img/hummer-drill.jpg" alt="Перфоратор 3" width="218" height="182">                            
@@ -279,7 +329,14 @@
                         </div>
                         <div class="popular-product-block">
                             <div class="popular-products-buttons">
-                                <a href="buy.html" class="buy-button">Купить</a>
+                                <a href="buy.html" class="buy-button">
+                                    <svg class="buy-button-image" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                        <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/>
+                                        <circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/>
+                                        <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
+                                    </svg>
+                                    Купить
+                                </a>
                                 <a href="#" class="to-bookmarks-button">В закладки</a>
                             </div> 
                             <img class="popular-image" src="img/hummer-drill-2.jpg" alt="Перфоратор 2" width="218" height="182">
@@ -289,7 +346,14 @@
                         </div>
                         <div class="popular-product-block">
                             <div class="popular-products-buttons">
-                                <a href="buy.html" class="buy-button">Купить</a>
+                                <a href="buy.html" class="buy-button">
+                                    <svg class="buy-button-image" xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                                        <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/>
+                                        <circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/>
+                                        <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
+                                    </svg>
+                                    Купить
+                                </a>
                                 <a href="#" class="to-bookmarks-button">В закладки</a>
                             </div>                     
                             <img class="popular-image" src="img/hummer-drill-4.jpg" alt="Перфоратор 1" width="218" height="182">
@@ -299,7 +363,7 @@
                         </div>
                     </div>                    
                     <ul class="page">
-                        <li><a href="#" class="page-number">1</a></li>
+                        <li><a href="#" class="page-number page-number-active">1</a></li>
                         <li><a href="#" class="page-number">2</a></li>
                         <li><a href="#" class="page-number">3</a></li>
                         <li><a href="#" class="page-number-next">Следующая</a></li>
@@ -315,14 +379,13 @@
                 Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
             </div>
         </section>   
+
     </main>
 
     <footer class="footer">
         <div class="footer-top-content container">
             <div class="footer-nav">
-                <a href="index.html" aria-label="На главную" class="footer-logo">
-                    Техномарт
-                </a>              
+                <a href="index.html" aria-label="На главную" class="footer-logo">Техномарт</a>              
                 <nav>
                     <ul class="footer-navigation">
                         <li><a href="#" class="footer-unit">Компания</a></li>
@@ -334,12 +397,8 @@
                 </nav>            
             </div>
             <div class="footer-info">
-                <div>
-                    <p class="footer-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
-                    <a href="tel:+7(812)555-05-55" aria-label="Номер телефона" class="footer-phone-number">
-                        +7 (812) 555-05-55
-                    </a></p>
-                </div>               
+                <p class="footer-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
+                <a href="tel:+7(812)555-05-55" aria-label="Номер телефона" class="footer-phone-number">+7 (812) 555-05-55</a></p>                    
                 <nav>
                     <ul class="footer-navigation">
                         <li><a href="#" class="footer-element">Материалы</a></li>
@@ -351,11 +410,9 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <div class="footer-bottom-content container">
-                <div>
-                    <p class="footer-company">© 2010–2017 Компания «Техномарт»</p>
-                    <p class="footer-company"> Все права защищены</p>
-                </div>
+            <div class="footer-bottom-content container">                
+                <p class="footer-company">© 2010–2017 Компания «Техномарт» <br>
+                Все права защищены</p>
                 <div class="footer-social">
                     <a href="#" aria-label="Вконтакте">
                         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="15" viewBox="0 0 26 15">
@@ -376,55 +433,48 @@
                 <div class="footer-feedback">
                     <div>
                         <span>Обратная связь:</span><br>
-                        <a href="mailto:mail@htmlacademy.ru" aria-label="Почта htmlacademy">
-                            mail@htmlacademy.ru
-                        </a>
+                        <a href="mailto:mail@htmlacademy.ru" aria-label="Почта htmlacademy">mail@htmlacademy.ru</a>
                     </div>
                     <div>
                         <span>Разработано —</span><br>
-                        <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Ссылка на htmlacademy">
-                            htmlacademy.ru
-                        </a>
-                     </div>
+                        <a href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Ссылка на htmlacademy">htmlacademy.ru</a>
+                    </div>
                 </div>           
             </div>
         </div>
     </footer>
 
-    <section class="modal-feedback modal">  
-        <div class="feedback-content">         
-            <h2 class="visually-hidden">Обратная связь</h2>
-            <button class="close-feedback" type="button" aria-label="Закрыть окно">
-                <span class="visually-hidden">Закрыть</span>
-            </button>
-            <div>
-                <form action="https://echo.htmlacademy.ru" method="POST">
-                    <div class="feedback-top">
-                        <div class="feedback-top-item-left">
-                            <label for="feedback-user-name" class="feedback-title">Ваше имя:</label>
-                            <input class="feedback-user-name-input" type="text" name="name" id="feedback-user-name" placeholder="Имя Фамилия">
-                        </div>
-                        <div>
-                            <label for="feedback-e-mail" class="feedback-title">Ваш e-mail:</label>
-                            <input class="feedback-e-mail-input" type="text" name="e-mail" id="feedback-e-mail" placeholder="email@example.com">
-                        </div>
-                    </div>
-                    <label for="feedback-message" class="feedback-title">Текст письма:</label>
-                    <textarea class="feedback-message-input" name="message" id="feedback-message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-                    <button type="submit" class="feedback-button button">Отправить</button>
-                </form>
+    <section class="modal-feedback modal">       
+        <button class="close-feedback" type="button" aria-label="Закрыть окно">
+            <span class="visually-hidden">Закрыть</span>
+        </button>       
+        <form action="https://echo.htmlacademy.ru" method="POST">
+            <div class="feedback-content">
+                <h2 class="visually-hidden">Обратная связь</h2>
+                <div class="feedback-top">                    
+                    <label for="feedback-user-name" class="feedback-title feedback-first-title">Ваше имя:
+                        <input class="feedback-user-name-input feedback-input" type="text" name="name" id="feedback-user-name" placeholder="Имя Фамилия">
+                    </label>                   
+                    <label for="feedback-e-mail" class="feedback-title">Ваш e-mail:
+                        <input class="feedback-e-mail-input feedback-input" type="text" name="e-mail" id="feedback-e-mail" placeholder="email@example.com">
+                    </label>                    
+                </div>
+                <label for="feedback-message" class="feedback-title">Текст письма:
+                    <textarea class="feedback-message-input feedback-input" name="message" id="feedback-message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+                </label>
+                </div>
+            <div class="feedback-button-content">
+                <button type="submit" class="feedback-button button">Отправить</button>
             </div>
-        </div>          
+        </form>               
     </section>
 
     <section class="modal-checkout modal">
+        <button class="close-checkout" type="button">
+            <span class="visually-hidden">Закрыть</span>
+        </button>
         <h2 class="visually-hidden">Добавление в корзину</h2>
-        <div class="checkout-content ">
-            <button class="close-checkout" type="button">
-                <span class="visually-hidden">Закрыть</span>
-            </button>
-            <p class="checkout-inscription">Товар добавлен в корзину!</p>
-        </div>    
+        <p class="checkout-inscription">Товар добавлен в корзину!</p>
         <div class="checkout-bottom-buttons ">
             <a href="#" class="checkout-button button">Оформить заказ</a>
             <button type="button" class="checkout-button-continue button">
@@ -432,6 +482,7 @@
             </button>
         </div>
     </section>
+
     <script src="js/scripts-min.js"></script>
 
 </body>
